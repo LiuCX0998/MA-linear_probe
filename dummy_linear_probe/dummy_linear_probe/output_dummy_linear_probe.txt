@@ -1,0 +1,110 @@
+D:\Anaconda3-2024.06\envs\lma_beit3\python.exe "C:\Users\刘春雪\PycharmProjects\linear probe\dummy_linear_probe.py" 
+
+==============================
+Experiment: Positive Control (Spatial Signal Present)
+Spatial signal present: True
+Num objects: 427
+Num pairs: 1932
+
+===== Sample Pair Records =====
+[0] scene=0, apple -> lamp
+     feature shape: (96,)
+     target [dx, dz]: [-6.0844126  4.2599626]
+[1] scene=0, apple -> fridge
+     feature shape: (96,)
+     target [dx, dz]: [-2.445709   1.2790246]
+[2] scene=0, apple -> microwave
+     feature shape: (96,)
+     target [dx, dz]: [-5.4507    -1.1091399]
+
+===== Training Artifact Summary =====
+Model type: Ridge
+Ridge alpha: 1.0
+Feature dim: 96
+Target dim: 2
+Coef shape: [2, 96]
+Intercept shape: [2]
+Train scenes: 64 | Test scenes: 16
+Train pairs: 1576 | Test pairs: 356
+
+===== Training Diagnostics =====
+split: train
+n_samples: 1576
+MSE overall: 0.0026
+R2  overall: 0.9998
+MSE dx: 0.0018
+MSE dz: 0.0033
+R2 dx:  0.9999
+R2 dz:  0.9998
+mean residual norm: 0.0632
+std residual norm:  0.0336
+
+===== Evaluation Result (Test) =====
+split: test
+n_samples: 356
+MSE overall: 0.0039
+R2  overall: 0.9997
+MSE dx: 0.0023
+MSE dz: 0.0055
+R2 dx:  0.9998
+R2 dz:  0.9996
+mean residual norm: 0.0779
+std residual norm:  0.0417
+
+==============================
+Experiment: Negative Control (No Spatial Signal)
+Spatial signal present: False
+Num objects: 427
+Num pairs: 1932
+
+===== Sample Pair Records =====
+[0] scene=0, apple -> lamp
+     feature shape: (96,)
+     target [dx, dz]: [-6.0844126  4.2599626]
+[1] scene=0, apple -> fridge
+     feature shape: (96,)
+     target [dx, dz]: [-2.445709   1.2790246]
+[2] scene=0, apple -> microwave
+     feature shape: (96,)
+     target [dx, dz]: [-5.4507    -1.1091399]
+
+===== Training Artifact Summary =====
+Model type: Ridge
+Ridge alpha: 1.0
+Feature dim: 96
+Target dim: 2
+Coef shape: [2, 96]
+Intercept shape: [2]
+Train scenes: 64 | Test scenes: 16
+Train pairs: 1576 | Test pairs: 356
+
+===== Training Diagnostics =====
+split: train
+n_samples: 1576
+MSE overall: 14.8726
+R2  overall: 0.1030
+MSE dx: 14.5653
+MSE dz: 15.1799
+R2 dx:  0.0812
+R2 dz:  0.1248
+mean residual norm: 4.9165
+std residual norm:  2.3608
+
+===== Evaluation Result (Test) =====
+split: test
+n_samples: 356
+MSE overall: 15.6307
+R2  overall: -0.1059
+MSE dx: 16.6415
+MSE dz: 14.6199
+R2 dx:  -0.0827
+R2 dz:  -0.1292
+mean residual norm: 5.0118
+std residual norm:  2.4785
+
+==============================
+Quick comparison on TEST R²:
+Positive test R²: 0.9997
+Negative test R²: -0.1059
+
+进程已结束，退出代码为 0
