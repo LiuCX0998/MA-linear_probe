@@ -1,42 +1,3 @@
-# ============================================================
-# 本版本相较于dummy_linear_probe版本，主要做了以下修改：
-#
-# 1. 不再从全局 object vocab 均匀随机采样物体，
-#    而是先采样 room_type（如 kitchen / living_room / office），
-#    再按 room_type 的物体共现先验采样 scene 中的 objects，
-#    使场景分布更接近真实室内环境。
-#
-# 2. 不再对每个物体在整个空间内均匀采样坐标，
-#    而是为不同 object category 设置位置先验（position prior），
-#    并加入 parent-child / receptacle-like 依赖，
-#    例如 cup / plate / apple 更可能靠近 table，
-#    apple 也可能靠近 fridge，从而使空间分布更接近真实场景。
-#
-# 3. hidden state 不再仅由 [x, z] 的线性映射 + category embedding + iid noise 组成，
-#    而改为由以下成分共同组成：
-#       - 空间线性子空间（spatial component）
-#       - 物体类别语义（semantic component）
-#       - 房间类型/场景上下文（room / scene component）
-#       - 跨物体上下文混合（context mixing component）
-#       - 关系词捷径近似（relation bias component）
-#       - 噪声（noise component）
-#
-# 4. 空间信息不再分布在 hidden 的全部维度上，
-#    而是通过 space_mask 仅注入到部分维度区间，
-#    以模拟真实模型中信息在部分子空间/维度块中集中的情况。
-#
-# 5. ObjectRecord 中新增 room_type / parent_object_name / relation_tags 等字段，
-#    用于保留场景结构信息，便于后续分析 hidden 来源。
-
-# h=spatial+semantic+room+scene+context-mix+relation-bias+noise
-
-# 整体目标：
-# 在保持“hidden state 中包含可线性读出的空间信息”这一前提下，
-# 让 dummy hidden 更接近真实 LM object-level hidden 的统计结构和干扰因素，
-# 从而更严格地验证 probe 与分析流程。
-# ============================================================
-
-
 import json
 import numpy as np
 from dataclasses import dataclass
@@ -142,7 +103,7 @@ class DummySpatialDataset:
             loc=0.0, scale=space_signal_scale, size=(2, hidden_dim)
         )
 
-        # 仅让空间信息进入部分维度，模拟局部子空间
+        # Restrict spatial information to a subset of dimensions to simulate a local subspace.
         self.space_mask = np.zeros(hidden_dim, dtype=np.float32)
         self.space_mask[8:16] = 1.0
         self.space_mask[24:32] = 1.0
@@ -159,7 +120,7 @@ class DummySpatialDataset:
             for room in room_types
         }
 
-        # relation-bias embeddings（模拟文本关系词在 hidden 中留下的偏置）
+        # relation-bias embeddings（Simulate the bias that relational words leave in the hidden states）
         self.relation_bias_embeddings = {
             "left": self.rng.normal(loc=0.0, scale=0.3, size=(hidden_dim,)),
             "right": self.rng.normal(loc=0.0, scale=0.3, size=(hidden_dim,)),
@@ -204,7 +165,6 @@ class DummySpatialDataset:
     ) -> Tuple[float, float, Optional[str]]:
         parent_object_name = None
 
-        # apple: 优先有概率靠近 fridge，否则如果已有 table 就靠近 table
         if obj_name == "apple":
             if "fridge" in object_positions and self.rng.random() < 0.3:
                 parent_object_name = "fridge"
@@ -220,7 +180,6 @@ class DummySpatialDataset:
                 z = pz + self.rng.normal(0.0, 0.35)
                 return float(x), float(z), parent_object_name
 
-        # plate / cup: 如果已有 table，就靠近 table
         if obj_name in ["plate", "cup"] and "table" in object_positions:
             parent_object_name = "table"
             px, pz = object_positions["table"]
@@ -228,7 +187,6 @@ class DummySpatialDataset:
             z = pz + self.rng.normal(0.0, 0.35)
             return float(x), float(z), parent_object_name
 
-        # 否则按该类别的位置先验采样
         center = self.object_position_priors[obj_name]
         x = self.rng.normal(center[0], 0.8)
         z = self.rng.normal(center[1], 0.8)
