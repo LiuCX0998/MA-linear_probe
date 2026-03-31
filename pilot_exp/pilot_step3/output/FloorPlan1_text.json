@@ -1,0 +1,69 @@
+{
+  "scene": "FloorPlan1",
+  "num_sentences": 6,
+  "sentences": [
+    "The fork is in the drawer.",
+    "The pot is on the counter top.",
+    "The knife is in the drawer.",
+    "The plate is in the cabinet.",
+    "The house plant is on the counter top.",
+    "The salt shaker is on the counter top."
+  ],
+  "paragraph": "The fork is in the drawer. The pot is on the counter top. The knife is in the drawer. The plate is in the cabinet. The house plant is on the counter top. The salt shaker is on the counter top.",
+  "text_records": [
+    {
+      "relation_index": 0,
+      "subject_id": "Fork|+00.95|+00.77|-02.37",
+      "subject_type": "Fork",
+      "relation": "in",
+      "object_id": "Drawer|+00.95|+00.83|-02.20",
+      "object_type": "Drawer",
+      "sentence": "The fork is in the drawer."
+    },
+    {
+      "relation_index": 1,
+      "subject_id": "Pot|-01.22|+00.90|-02.36",
+      "subject_type": "Pot",
+      "relation": "on",
+      "object_id": "CounterTop|-01.87|+00.95|-01.21",
+      "object_type": "CounterTop",
+      "sentence": "The pot is on the counter top."
+    },
+    {
+      "relation_index": 2,
+      "subject_id": "Knife|-01.70|+00.79|-00.22",
+      "subject_type": "Knife",
+      "relation": "in",
+      "object_id": "Drawer|-01.56|+00.84|-00.20",
+      "object_type": "Drawer",
+      "sentence": "The knife is in the drawer."
+    },
+    {
+      "relation_index": 3,
+      "subject_id": "Plate|+00.96|+01.65|-02.61",
+      "subject_type": "Plate",
+      "relation": "in",
+      "object_id": "Cabinet|+00.72|+02.02|-02.46",
+      "object_type": "Cabinet",
+      "sentence": "The plate is in the cabinet."
+    },
+    {
+      "relation_index": 4,
+      "subject_id": "HousePlant|-01.95|+00.89|-02.52",
+      "subject_type": "HousePlant",
+      "relation": "on",
+      "object_id": "CounterTop|-01.87|+00.95|-01.21",
+      "object_type": "CounterTop",
+      "sentence": "The house plant is on the counter top."
+    },
+    {
+      "relation_index": 5,
+      "subject_id": "SaltShaker|+00.35|+00.90|-02.57",
+      "subject_type": "SaltShaker",
+      "relation": "on",
+      "object_id": "CounterTop|+00.69|+00.95|-02.48",
+      "object_type": "CounterTop",
+      "sentence": "The salt shaker is on the counter top."
+    }
+  ]
+}

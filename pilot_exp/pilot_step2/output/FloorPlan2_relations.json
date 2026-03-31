@@ -1,0 +1,34 @@
+{
+  "scene": "FloorPlan2",
+  "num_relations": 4,
+  "relations": [
+    {
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "relation": "in",
+      "object_id": "Drawer|+01.50|+00.63|-00.02",
+      "object_type": "Drawer"
+    },
+    {
+      "subject_id": "Cup|+00.90|+01.67|-01.61",
+      "subject_type": "Cup",
+      "relation": "in",
+      "object_id": "Cabinet|+01.71|+02.02|-01.45",
+      "object_type": "Cabinet"
+    },
+    {
+      "subject_id": "SaltShaker|+02.01|+00.90|+00.03",
+      "subject_type": "SaltShaker",
+      "relation": "on",
+      "object_id": "CounterTop|+00.00|+00.95|-01.51",
+      "object_type": "CounterTop"
+    },
+    {
+      "subject_id": "DishSponge|-00.55|+00.92|-01.39",
+      "subject_type": "DishSponge",
+      "relation": "on",
+      "object_id": "CounterTop|+00.00|+00.95|-01.51",
+      "object_type": "CounterTop"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "scene": "FloorPlan2",
+  "num_sentences": 4,
+  "sentences": [
+    "The butter knife is in the drawer.",
+    "The cup is in the cabinet.",
+    "The salt shaker is on the counter top.",
+    "The dish sponge is on the counter top."
+  ],
+  "paragraph": "The butter knife is in the drawer. The cup is in the cabinet. The salt shaker is on the counter top. The dish sponge is on the counter top.",
+  "text_records": [
+    {
+      "relation_index": 0,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "relation": "in",
+      "object_id": "Drawer|+01.50|+00.63|-00.02",
+      "object_type": "Drawer",
+      "sentence": "The butter knife is in the drawer."
+    },
+    {
+      "relation_index": 1,
+      "subject_id": "Cup|+00.90|+01.67|-01.61",
+      "subject_type": "Cup",
+      "relation": "in",
+      "object_id": "Cabinet|+01.71|+02.02|-01.45",
+      "object_type": "Cabinet",
+      "sentence": "The cup is in the cabinet."
+    },
+    {
+      "relation_index": 2,
+      "subject_id": "SaltShaker|+02.01|+00.90|+00.03",
+      "subject_type": "SaltShaker",
+      "relation": "on",
+      "object_id": "CounterTop|+00.00|+00.95|-01.51",
+      "object_type": "CounterTop",
+      "sentence": "The salt shaker is on the counter top."
+    },
+    {
+      "relation_index": 3,
+      "subject_id": "DishSponge|-00.55|+00.92|-01.39",
+      "subject_type": "DishSponge",
+      "relation": "on",
+      "object_id": "CounterTop|+00.00|+00.95|-01.51",
+      "object_type": "CounterTop",
+      "sentence": "The dish sponge is on the counter top."
+    }
+  ]
+}

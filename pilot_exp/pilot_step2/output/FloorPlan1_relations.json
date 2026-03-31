@@ -1,0 +1,48 @@
+{
+  "scene": "FloorPlan1",
+  "num_relations": 6,
+  "relations": [
+    {
+      "subject_id": "Fork|+00.95|+00.77|-02.37",
+      "subject_type": "Fork",
+      "relation": "in",
+      "object_id": "Drawer|+00.95|+00.83|-02.20",
+      "object_type": "Drawer"
+    },
+    {
+      "subject_id": "Pot|-01.22|+00.90|-02.36",
+      "subject_type": "Pot",
+      "relation": "on",
+      "object_id": "CounterTop|-01.87|+00.95|-01.21",
+      "object_type": "CounterTop"
+    },
+    {
+      "subject_id": "Knife|-01.70|+00.79|-00.22",
+      "subject_type": "Knife",
+      "relation": "in",
+      "object_id": "Drawer|-01.56|+00.84|-00.20",
+      "object_type": "Drawer"
+    },
+    {
+      "subject_id": "Plate|+00.96|+01.65|-02.61",
+      "subject_type": "Plate",
+      "relation": "in",
+      "object_id": "Cabinet|+00.72|+02.02|-02.46",
+      "object_type": "Cabinet"
+    },
+    {
+      "subject_id": "HousePlant|-01.95|+00.89|-02.52",
+      "subject_type": "HousePlant",
+      "relation": "on",
+      "object_id": "CounterTop|-01.87|+00.95|-01.21",
+      "object_type": "CounterTop"
+    },
+    {
+      "subject_id": "SaltShaker|+00.35|+00.90|-02.57",
+      "subject_type": "SaltShaker",
+      "relation": "on",
+      "object_id": "CounterTop|+00.69|+00.95|-02.48",
+      "object_type": "CounterTop"
+    }
+  ]
+}
