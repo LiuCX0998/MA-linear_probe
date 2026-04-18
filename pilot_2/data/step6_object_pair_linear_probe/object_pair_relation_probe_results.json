@@ -1,0 +1,341 @@
+{
+  "best_layer": 24,
+  "best_f1": 0.6152314584370332,
+  "results": [
+    {
+      "layer": 0,
+      "train": {
+        "split": "train",
+        "accuracy": 0.4146341463414634,
+        "macro_f1": 0.13814756671899528
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.4418604651162791,
+        "macro_f1": 0.08755760368663594
+      }
+    },
+    {
+      "layer": 1,
+      "train": {
+        "split": "train",
+        "accuracy": 0.926829268292683,
+        "macro_f1": 0.9181413004073102
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6046511627906976,
+        "macro_f1": 0.2999465811965812
+      }
+    },
+    {
+      "layer": 2,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6046511627906976,
+        "macro_f1": 0.2999465811965812
+      }
+    },
+    {
+      "layer": 3,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.5348837209302325,
+        "macro_f1": 0.20176571920757969
+      }
+    },
+    {
+      "layer": 4,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.5581395348837209,
+        "macro_f1": 0.29935897435897435
+      }
+    },
+    {
+      "layer": 5,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.5581395348837209,
+        "macro_f1": 0.27732525758841553
+      }
+    },
+    {
+      "layer": 6,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.5813953488372093,
+        "macro_f1": 0.3015151515151515
+      }
+    },
+    {
+      "layer": 7,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.627906976744186,
+        "macro_f1": 0.351461038961039
+      }
+    },
+    {
+      "layer": 8,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6046511627906976,
+        "macro_f1": 0.48106805475226533
+      }
+    },
+    {
+      "layer": 9,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.627906976744186,
+        "macro_f1": 0.5001889338731444
+      }
+    },
+    {
+      "layer": 10,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6511627906976745,
+        "macro_f1": 0.41126885536823427
+      }
+    },
+    {
+      "layer": 11,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6744186046511628,
+        "macro_f1": 0.519136302294197
+      }
+    },
+    {
+      "layer": 12,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6046511627906976,
+        "macro_f1": 0.3789225960654532
+      }
+    },
+    {
+      "layer": 13,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.5813953488372093,
+        "macro_f1": 0.4317982917982918
+      }
+    },
+    {
+      "layer": 14,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.627906976744186,
+        "macro_f1": 0.46059654631083197
+      }
+    },
+    {
+      "layer": 15,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6511627906976745,
+        "macro_f1": 0.4763044677330392
+      }
+    },
+    {
+      "layer": 16,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6511627906976745,
+        "macro_f1": 0.4763044677330392
+      }
+    },
+    {
+      "layer": 17,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6511627906976745,
+        "macro_f1": 0.4540677040677041
+      }
+    },
+    {
+      "layer": 18,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6976744186046512,
+        "macro_f1": 0.500180321608893
+      }
+    },
+    {
+      "layer": 19,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6976744186046512,
+        "macro_f1": 0.500180321608893
+      }
+    },
+    {
+      "layer": 20,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6976744186046512,
+        "macro_f1": 0.5134310134310135
+      }
+    },
+    {
+      "layer": 21,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.6744186046511628,
+        "macro_f1": 0.49944258639910816
+      }
+    },
+    {
+      "layer": 22,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.7674418604651163,
+        "macro_f1": 0.5889724310776943
+      }
+    },
+    {
+      "layer": 23,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.7674418604651163,
+        "macro_f1": 0.5889724310776943
+      }
+    },
+    {
+      "layer": 24,
+      "train": {
+        "split": "train",
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "test": {
+        "split": "test",
+        "accuracy": 0.8372093023255814,
+        "macro_f1": 0.6152314584370332
+      }
+    }
+  ],
+  "classes": [
+    "above",
+    "below",
+    "contains",
+    "in",
+    "left_of",
+    "near",
+    "on",
+    "right_of"
+  ]
+}
