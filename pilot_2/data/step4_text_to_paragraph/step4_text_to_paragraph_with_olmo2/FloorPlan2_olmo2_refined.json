@@ -1,0 +1,1048 @@
+{
+  "scene": "FloorPlan2",
+  "model_family": "OLMo",
+  "model_name": "allenai/OLMo-2-1124-7B-Instruct",
+  "input_num_sentences": 43,
+  "input_num_selected_relations": 43,
+  "input_paragraph": "butter_knife_1 is near drawer_4. butter_knife_1 is near drawer_3. cup_1 is near pot_1. cup_1 is near knife_1. plate_1 is near cabinet_2. pot_1 is near knife_1. butter_knife_1 is in drawer_4. cup_1 is in cabinet_2. cabinet_2 contains plate_1. butter_knife_1 is above drawer_2. butter_knife_1 is above drawer_1. cup_1 is to the left of drawer_4. butter_knife_1 is to the right of cup_1. cup_1 is to the left of drawer_2. drawer_3 is to the right of cup_1. cup_1 is to the left of drawer_1. plate_1 is to the right of cup_1. pot_1 is below cabinet_2. drawer_4 is to the right of pot_1. butter_knife_1 is to the right of pot_1. pot_1 is to the left of drawer_2. drawer_3 is to the right of pot_1. drawer_1 is to the right of pot_1. pot_1 is to the left of plate_1. knife_1 is to the left of drawer_4. butter_knife_1 is to the right of knife_1. knife_1 is to the left of drawer_2. drawer_3 is to the right of knife_1. knife_1 is to the left of drawer_1. knife_1 is to the left of cup_1. pot_1 is to the right of knife_1. knife_1 is to the left of plate_1. plate_1 is to the left of butter_knife_1. cabinet_1 is to the left of butter_knife_1. cabinet_1 is to the left of cup_1. cabinet_1 is to the left of pot_1. cabinet_1 is to the left of knife_1. plate_1 is to the right of cabinet_1. counter_top_1 is to the left of butter_knife_1. counter_top_1 is to the left of cup_1. pot_1 is to the right of counter_top_1. counter_top_1 is to the left of knife_1. counter_top_1 is to the left of plate_1.",
+  "input_sentences": [
+    "butter_knife_1 is near drawer_4.",
+    "butter_knife_1 is near drawer_3.",
+    "cup_1 is near pot_1.",
+    "cup_1 is near knife_1.",
+    "plate_1 is near cabinet_2.",
+    "pot_1 is near knife_1.",
+    "butter_knife_1 is in drawer_4.",
+    "cup_1 is in cabinet_2.",
+    "cabinet_2 contains plate_1.",
+    "butter_knife_1 is above drawer_2.",
+    "butter_knife_1 is above drawer_1.",
+    "cup_1 is to the left of drawer_4.",
+    "butter_knife_1 is to the right of cup_1.",
+    "cup_1 is to the left of drawer_2.",
+    "drawer_3 is to the right of cup_1.",
+    "cup_1 is to the left of drawer_1.",
+    "plate_1 is to the right of cup_1.",
+    "pot_1 is below cabinet_2.",
+    "drawer_4 is to the right of pot_1.",
+    "butter_knife_1 is to the right of pot_1.",
+    "pot_1 is to the left of drawer_2.",
+    "drawer_3 is to the right of pot_1.",
+    "drawer_1 is to the right of pot_1.",
+    "pot_1 is to the left of plate_1.",
+    "knife_1 is to the left of drawer_4.",
+    "butter_knife_1 is to the right of knife_1.",
+    "knife_1 is to the left of drawer_2.",
+    "drawer_3 is to the right of knife_1.",
+    "knife_1 is to the left of drawer_1.",
+    "knife_1 is to the left of cup_1.",
+    "pot_1 is to the right of knife_1.",
+    "knife_1 is to the left of plate_1.",
+    "plate_1 is to the left of butter_knife_1.",
+    "cabinet_1 is to the left of butter_knife_1.",
+    "cabinet_1 is to the left of cup_1.",
+    "cabinet_1 is to the left of pot_1.",
+    "cabinet_1 is to the left of knife_1.",
+    "plate_1 is to the right of cabinet_1.",
+    "counter_top_1 is to the left of butter_knife_1.",
+    "counter_top_1 is to the left of cup_1.",
+    "pot_1 is to the right of counter_top_1.",
+    "counter_top_1 is to the left of knife_1.",
+    "counter_top_1 is to the left of plate_1."
+  ],
+  "input_text_records": [
+    {
+      "relation_index": 0,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "subject_alias": "butter_knife_1",
+      "relation": "near",
+      "object_id": "Drawer|+01.50|+00.63|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_4",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "horizontal_distance",
+        "horizontal_distance": 0.19300941428513393,
+        "threshold": 0.5
+      },
+      "sentence": "butter_knife_1 is near drawer_4."
+    },
+    {
+      "relation_index": 1,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "subject_alias": "butter_knife_1",
+      "relation": "near",
+      "object_id": "Drawer|+01.50|+00.60|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_3",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "horizontal_distance",
+        "horizontal_distance": 0.1925192593824708,
+        "threshold": 0.5
+      },
+      "sentence": "butter_knife_1 is near drawer_3."
+    },
+    {
+      "relation_index": 2,
+      "subject_id": "Cup|+00.90|+01.67|-01.61",
+      "subject_type": "Cup",
+      "subject_alias": "cup_1",
+      "relation": "near",
+      "object_id": "Pot|+00.89|+00.90|-01.41",
+      "object_type": "Pot",
+      "object_alias": "pot_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "horizontal_distance",
+        "horizontal_distance": 0.19449748600808553,
+        "threshold": 0.5
+      },
+      "sentence": "cup_1 is near pot_1."
+    },
+    {
+      "relation_index": 3,
+      "subject_id": "Cup|+00.90|+01.67|-01.61",
+      "subject_type": "Cup",
+      "subject_alias": "cup_1",
+      "relation": "near",
+      "object_id": "Knife|+00.60|+00.91|-01.44",
+      "object_type": "Knife",
+      "object_alias": "knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "horizontal_distance",
+        "horizontal_distance": 0.33861557157013844,
+        "threshold": 0.5
+      },
+      "sentence": "cup_1 is near knife_1."
+    },
+    {
+      "relation_index": 4,
+      "subject_id": "Plate|+01.32|+01.67|-01.60",
+      "subject_type": "Plate",
+      "subject_alias": "plate_1",
+      "relation": "near",
+      "object_id": "Cabinet|+01.71|+02.02|-01.45",
+      "object_type": "Cabinet",
+      "object_alias": "cabinet_2",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "horizontal_distance",
+        "horizontal_distance": 0.40952578641859255,
+        "threshold": 0.5
+      },
+      "sentence": "plate_1 is near cabinet_2."
+    },
+    {
+      "relation_index": 5,
+      "subject_id": "Pot|+00.89|+00.90|-01.41",
+      "subject_type": "Pot",
+      "subject_alias": "pot_1",
+      "relation": "near",
+      "object_id": "Knife|+00.60|+00.91|-01.44",
+      "object_type": "Knife",
+      "object_alias": "knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "horizontal_distance",
+        "horizontal_distance": 0.29131443666841683,
+        "threshold": 0.5
+      },
+      "sentence": "pot_1 is near knife_1."
+    },
+    {
+      "relation_index": 6,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "subject_alias": "butter_knife_1",
+      "relation": "in",
+      "object_id": "Drawer|+01.50|+00.63|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_4",
+      "relation_family": "topological",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {},
+      "sentence": "butter_knife_1 is in drawer_4."
+    },
+    {
+      "relation_index": 7,
+      "subject_id": "Cup|+00.90|+01.67|-01.61",
+      "subject_type": "Cup",
+      "subject_alias": "cup_1",
+      "relation": "in",
+      "object_id": "Cabinet|+01.71|+02.02|-01.45",
+      "object_type": "Cabinet",
+      "object_alias": "cabinet_2",
+      "relation_family": "topological",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {},
+      "sentence": "cup_1 is in cabinet_2."
+    },
+    {
+      "relation_index": 8,
+      "subject_id": "Cabinet|+01.71|+02.02|-01.45",
+      "subject_type": "Cabinet",
+      "subject_alias": "cabinet_2",
+      "relation": "contains",
+      "object_id": "Plate|+01.32|+01.67|-01.60",
+      "object_type": "Plate",
+      "object_alias": "plate_1",
+      "relation_family": "topological",
+      "is_inverse_relation": true,
+      "derived_from_relation": "in",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "in",
+        "forward_evidence": {}
+      },
+      "sentence": "cabinet_2 contains plate_1."
+    },
+    {
+      "relation_index": 9,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "subject_alias": "butter_knife_1",
+      "relation": "above",
+      "object_id": "Drawer|+01.50|+00.43|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_2",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "vertical_clearance_with_xz_overlap",
+        "y_clearance": 0.13500553369522095,
+        "x_overlap": 0.20528626441955566,
+        "z_overlap": 0.20432376861572266,
+        "y_margin": 0.03
+      },
+      "sentence": "butter_knife_1 is above drawer_2."
+    },
+    {
+      "relation_index": 10,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "subject_alias": "butter_knife_1",
+      "relation": "above",
+      "object_id": "Drawer|+01.50|+00.20|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "vertical_clearance_with_xz_overlap",
+        "y_clearance": 0.3677055537700653,
+        "x_overlap": 0.20528626441955566,
+        "z_overlap": 0.20432376861572266,
+        "y_margin": 0.03
+      },
+      "sentence": "butter_knife_1 is above drawer_1."
+    },
+    {
+      "relation_index": 11,
+      "subject_id": "Cup|+00.90|+01.67|-01.61",
+      "subject_type": "Cup",
+      "subject_alias": "cup_1",
+      "relation": "left_of",
+      "object_id": "Drawer|+01.50|+00.63|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_4",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.5373444557189941,
+        "margin": 0.05
+      },
+      "sentence": "cup_1 is to the left of drawer_4."
+    },
+    {
+      "relation_index": 12,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "subject_alias": "butter_knife_1",
+      "relation": "right_of",
+      "object_id": "Cup|+00.90|+01.67|-01.61",
+      "object_type": "Cup",
+      "object_alias": "cup_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.6164506673812866,
+          "margin": 0.05
+        }
+      },
+      "sentence": "butter_knife_1 is to the right of cup_1."
+    },
+    {
+      "relation_index": 13,
+      "subject_id": "Cup|+00.90|+01.67|-01.61",
+      "subject_type": "Cup",
+      "subject_alias": "cup_1",
+      "relation": "left_of",
+      "object_id": "Drawer|+01.50|+00.43|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_2",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.5308401584625244,
+        "margin": 0.05
+      },
+      "sentence": "cup_1 is to the left of drawer_2."
+    },
+    {
+      "relation_index": 14,
+      "subject_id": "Drawer|+01.50|+00.60|-00.02",
+      "subject_type": "Drawer",
+      "subject_alias": "drawer_3",
+      "relation": "right_of",
+      "object_id": "Cup|+00.90|+01.67|-01.61",
+      "object_type": "Cup",
+      "object_alias": "cup_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.5315837860107422,
+          "margin": 0.05
+        }
+      },
+      "sentence": "drawer_3 is to the right of cup_1."
+    },
+    {
+      "relation_index": 15,
+      "subject_id": "Cup|+00.90|+01.67|-01.61",
+      "subject_type": "Cup",
+      "subject_alias": "cup_1",
+      "relation": "left_of",
+      "object_id": "Drawer|+01.50|+00.20|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.5308401584625244,
+        "margin": 0.05
+      },
+      "sentence": "cup_1 is to the left of drawer_1."
+    },
+    {
+      "relation_index": 16,
+      "subject_id": "Plate|+01.32|+01.67|-01.60",
+      "subject_type": "Plate",
+      "subject_alias": "plate_1",
+      "relation": "right_of",
+      "object_id": "Cup|+00.90|+01.67|-01.61",
+      "object_type": "Cup",
+      "object_alias": "cup_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.25594496726989746,
+          "margin": 0.05
+        }
+      },
+      "sentence": "plate_1 is to the right of cup_1."
+    },
+    {
+      "relation_index": 17,
+      "subject_id": "Pot|+00.89|+00.90|-01.41",
+      "subject_type": "Pot",
+      "subject_alias": "pot_1",
+      "relation": "below",
+      "object_id": "Cabinet|+01.71|+02.02|-01.45",
+      "object_type": "Cabinet",
+      "object_alias": "cabinet_2",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "above",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "above",
+        "forward_evidence": {
+          "rule": "vertical_clearance_with_xz_overlap",
+          "y_clearance": 0.5631074905395508,
+          "x_overlap": 0.2854893207550049,
+          "z_overlap": 0.09990262985229492,
+          "y_margin": 0.03
+        }
+      },
+      "sentence": "pot_1 is below cabinet_2."
+    },
+    {
+      "relation_index": 18,
+      "subject_id": "Drawer|+01.50|+00.63|-00.02",
+      "subject_type": "Drawer",
+      "subject_alias": "drawer_4",
+      "relation": "right_of",
+      "object_id": "Pot|+00.89|+00.90|-01.41",
+      "object_type": "Pot",
+      "object_alias": "pot_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.45329761505126953,
+          "margin": 0.05
+        }
+      },
+      "sentence": "drawer_4 is to the right of pot_1."
+    },
+    {
+      "relation_index": 19,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "subject_alias": "butter_knife_1",
+      "relation": "right_of",
+      "object_id": "Pot|+00.89|+00.90|-01.41",
+      "object_type": "Pot",
+      "object_alias": "pot_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.532403826713562,
+          "margin": 0.05
+        }
+      },
+      "sentence": "butter_knife_1 is to the right of pot_1."
+    },
+    {
+      "relation_index": 20,
+      "subject_id": "Pot|+00.89|+00.90|-01.41",
+      "subject_type": "Pot",
+      "subject_alias": "pot_1",
+      "relation": "left_of",
+      "object_id": "Drawer|+01.50|+00.43|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_2",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.4467933177947998,
+        "margin": 0.05
+      },
+      "sentence": "pot_1 is to the left of drawer_2."
+    },
+    {
+      "relation_index": 21,
+      "subject_id": "Drawer|+01.50|+00.60|-00.02",
+      "subject_type": "Drawer",
+      "subject_alias": "drawer_3",
+      "relation": "right_of",
+      "object_id": "Pot|+00.89|+00.90|-01.41",
+      "object_type": "Pot",
+      "object_alias": "pot_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.4475369453430176,
+          "margin": 0.05
+        }
+      },
+      "sentence": "drawer_3 is to the right of pot_1."
+    },
+    {
+      "relation_index": 22,
+      "subject_id": "Drawer|+01.50|+00.20|-00.02",
+      "subject_type": "Drawer",
+      "subject_alias": "drawer_1",
+      "relation": "right_of",
+      "object_id": "Pot|+00.89|+00.90|-01.41",
+      "object_type": "Pot",
+      "object_alias": "pot_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.4467933177947998,
+          "margin": 0.05
+        }
+      },
+      "sentence": "drawer_1 is to the right of pot_1."
+    },
+    {
+      "relation_index": 23,
+      "subject_id": "Pot|+00.89|+00.90|-01.41",
+      "subject_type": "Pot",
+      "subject_alias": "pot_1",
+      "relation": "left_of",
+      "object_id": "Plate|+01.32|+01.67|-01.60",
+      "object_type": "Plate",
+      "object_alias": "plate_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.17189812660217285,
+        "margin": 0.05
+      },
+      "sentence": "pot_1 is to the left of plate_1."
+    },
+    {
+      "relation_index": 24,
+      "subject_id": "Knife|+00.60|+00.91|-01.44",
+      "subject_type": "Knife",
+      "subject_alias": "knife_1",
+      "relation": "left_of",
+      "object_id": "Drawer|+01.50|+00.63|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_4",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.8048542737960815,
+        "margin": 0.05
+      },
+      "sentence": "knife_1 is to the left of drawer_4."
+    },
+    {
+      "relation_index": 25,
+      "subject_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "subject_type": "ButterKnife",
+      "subject_alias": "butter_knife_1",
+      "relation": "right_of",
+      "object_id": "Knife|+00.60|+00.91|-01.44",
+      "object_type": "Knife",
+      "object_alias": "knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.883960485458374,
+          "margin": 0.05
+        }
+      },
+      "sentence": "butter_knife_1 is to the right of knife_1."
+    },
+    {
+      "relation_index": 26,
+      "subject_id": "Knife|+00.60|+00.91|-01.44",
+      "subject_type": "Knife",
+      "subject_alias": "knife_1",
+      "relation": "left_of",
+      "object_id": "Drawer|+01.50|+00.43|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_2",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.7983499765396118,
+        "margin": 0.05
+      },
+      "sentence": "knife_1 is to the left of drawer_2."
+    },
+    {
+      "relation_index": 27,
+      "subject_id": "Drawer|+01.50|+00.60|-00.02",
+      "subject_type": "Drawer",
+      "subject_alias": "drawer_3",
+      "relation": "right_of",
+      "object_id": "Knife|+00.60|+00.91|-01.44",
+      "object_type": "Knife",
+      "object_alias": "knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.7990936040878296,
+          "margin": 0.05
+        }
+      },
+      "sentence": "drawer_3 is to the right of knife_1."
+    },
+    {
+      "relation_index": 28,
+      "subject_id": "Knife|+00.60|+00.91|-01.44",
+      "subject_type": "Knife",
+      "subject_alias": "knife_1",
+      "relation": "left_of",
+      "object_id": "Drawer|+01.50|+00.20|-00.02",
+      "object_type": "Drawer",
+      "object_alias": "drawer_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.7983499765396118,
+        "margin": 0.05
+      },
+      "sentence": "knife_1 is to the left of drawer_1."
+    },
+    {
+      "relation_index": 29,
+      "subject_id": "Knife|+00.60|+00.91|-01.44",
+      "subject_type": "Knife",
+      "subject_alias": "knife_1",
+      "relation": "left_of",
+      "object_id": "Cup|+00.90|+01.67|-01.61",
+      "object_type": "Cup",
+      "object_alias": "cup_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.16643798351287842,
+        "margin": 0.05
+      },
+      "sentence": "knife_1 is to the left of cup_1."
+    },
+    {
+      "relation_index": 30,
+      "subject_id": "Pot|+00.89|+00.90|-01.41",
+      "subject_type": "Pot",
+      "subject_alias": "pot_1",
+      "relation": "right_of",
+      "object_id": "Knife|+00.60|+00.91|-01.44",
+      "object_type": "Knife",
+      "object_alias": "knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.06606733798980713,
+          "margin": 0.05
+        }
+      },
+      "sentence": "pot_1 is to the right of knife_1."
+    },
+    {
+      "relation_index": 31,
+      "subject_id": "Knife|+00.60|+00.91|-01.44",
+      "subject_type": "Knife",
+      "subject_alias": "knife_1",
+      "relation": "left_of",
+      "object_id": "Plate|+01.32|+01.67|-01.60",
+      "object_type": "Plate",
+      "object_alias": "plate_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.5234547853469849,
+        "margin": 0.05
+      },
+      "sentence": "knife_1 is to the left of plate_1."
+    },
+    {
+      "relation_index": 32,
+      "subject_id": "Plate|+01.32|+01.67|-01.60",
+      "subject_type": "Plate",
+      "subject_alias": "plate_1",
+      "relation": "left_of",
+      "object_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "object_type": "ButterKnife",
+      "object_alias": "butter_knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.11858189105987549,
+        "margin": 0.05
+      },
+      "sentence": "plate_1 is to the left of butter_knife_1."
+    },
+    {
+      "relation_index": 33,
+      "subject_id": "Cabinet|+00.41|+00.48|+00.45",
+      "subject_type": "Cabinet",
+      "subject_alias": "cabinet_1",
+      "relation": "left_of",
+      "object_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "object_type": "ButterKnife",
+      "object_alias": "butter_knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 1.1439161002635956,
+        "margin": 0.05
+      },
+      "sentence": "cabinet_1 is to the left of butter_knife_1."
+    },
+    {
+      "relation_index": 34,
+      "subject_id": "Cabinet|+00.41|+00.48|+00.45",
+      "subject_type": "Cabinet",
+      "subject_alias": "cabinet_1",
+      "relation": "left_of",
+      "object_id": "Cup|+00.90|+01.67|-01.61",
+      "object_type": "Cup",
+      "object_alias": "cup_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.4263935983181,
+        "margin": 0.05
+      },
+      "sentence": "cabinet_1 is to the left of cup_1."
+    },
+    {
+      "relation_index": 35,
+      "subject_id": "Cabinet|+00.41|+00.48|+00.45",
+      "subject_type": "Cabinet",
+      "subject_alias": "cabinet_1",
+      "relation": "left_of",
+      "object_id": "Pot|+00.89|+00.90|-01.41",
+      "object_type": "Pot",
+      "object_alias": "pot_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.3260229527950287,
+        "margin": 0.05
+      },
+      "sentence": "cabinet_1 is to the left of pot_1."
+    },
+    {
+      "relation_index": 36,
+      "subject_id": "Cabinet|+00.41|+00.48|+00.45",
+      "subject_type": "Cabinet",
+      "subject_alias": "cabinet_1",
+      "relation": "left_of",
+      "object_id": "Knife|+00.60|+00.91|-01.44",
+      "object_type": "Knife",
+      "object_alias": "knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.07081004977226257,
+        "margin": 0.05
+      },
+      "sentence": "cabinet_1 is to the left of knife_1."
+    },
+    {
+      "relation_index": 37,
+      "subject_id": "Plate|+01.32|+01.67|-01.60",
+      "subject_type": "Plate",
+      "subject_alias": "plate_1",
+      "relation": "right_of",
+      "object_id": "Cabinet|+00.41|+00.48|+00.45",
+      "object_type": "Cabinet",
+      "object_alias": "cabinet_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.7834104001522064,
+          "margin": 0.05
+        }
+      },
+      "sentence": "plate_1 is to the right of cabinet_1."
+    },
+    {
+      "relation_index": 38,
+      "subject_id": "CounterTop|-00.02|+00.96|+00.51",
+      "subject_type": "CounterTop",
+      "subject_alias": "counter_top_1",
+      "relation": "left_of",
+      "object_id": "ButterKnife|+01.67|+00.69|-00.11",
+      "object_type": "ButterKnife",
+      "object_alias": "butter_knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 1.1396363079547882,
+        "margin": 0.05
+      },
+      "sentence": "counter_top_1 is to the left of butter_knife_1."
+    },
+    {
+      "relation_index": 39,
+      "subject_id": "CounterTop|-00.02|+00.96|+00.51",
+      "subject_type": "CounterTop",
+      "subject_alias": "counter_top_1",
+      "relation": "left_of",
+      "object_id": "Cup|+00.90|+01.67|-01.61",
+      "object_type": "Cup",
+      "object_alias": "cup_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.4221138060092926,
+        "margin": 0.05
+      },
+      "sentence": "counter_top_1 is to the left of cup_1."
+    },
+    {
+      "relation_index": 40,
+      "subject_id": "Pot|+00.89|+00.90|-01.41",
+      "subject_type": "Pot",
+      "subject_alias": "pot_1",
+      "relation": "right_of",
+      "object_id": "CounterTop|-00.02|+00.96|+00.51",
+      "object_type": "CounterTop",
+      "object_alias": "counter_top_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": true,
+      "derived_from_relation": "left_of",
+      "evidence": {
+        "source": "inverse_relation",
+        "forward_relation": "left_of",
+        "forward_evidence": {
+          "rule": "x_separation",
+          "x_gap": 0.3217431604862213,
+          "margin": 0.05
+        }
+      },
+      "sentence": "pot_1 is to the right of counter_top_1."
+    },
+    {
+      "relation_index": 41,
+      "subject_id": "CounterTop|-00.02|+00.96|+00.51",
+      "subject_type": "CounterTop",
+      "subject_alias": "counter_top_1",
+      "relation": "left_of",
+      "object_id": "Knife|+00.60|+00.91|-01.44",
+      "object_type": "Knife",
+      "object_alias": "knife_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.0665302574634552,
+        "margin": 0.05
+      },
+      "sentence": "counter_top_1 is to the left of knife_1."
+    },
+    {
+      "relation_index": 42,
+      "subject_id": "CounterTop|-00.02|+00.96|+00.51",
+      "subject_type": "CounterTop",
+      "subject_alias": "counter_top_1",
+      "relation": "left_of",
+      "object_id": "Plate|+01.32|+01.67|-01.60",
+      "object_type": "Plate",
+      "object_alias": "plate_1",
+      "relation_family": "geometric",
+      "is_inverse_relation": false,
+      "derived_from_relation": null,
+      "evidence": {
+        "rule": "x_separation",
+        "x_gap": 0.779130607843399,
+        "margin": 0.05
+      },
+      "sentence": "counter_top_1 is to the left of plate_1."
+    }
+  ],
+  "input_entity_alias_map": {
+    "ButterKnife|+01.67|+00.69|-00.11": "butter_knife_1",
+    "Drawer|+01.50|+00.20|-00.02": "drawer_1",
+    "Drawer|+01.50|+00.43|-00.02": "drawer_2",
+    "Drawer|+01.50|+00.60|-00.02": "drawer_3",
+    "Drawer|+01.50|+00.63|-00.02": "drawer_4",
+    "Cup|+00.90|+01.67|-01.61": "cup_1",
+    "Pot|+00.89|+00.90|-01.41": "pot_1",
+    "Knife|+00.60|+00.91|-01.44": "knife_1",
+    "Plate|+01.32|+01.67|-01.60": "plate_1",
+    "Cabinet|+00.41|+00.48|+00.45": "cabinet_1",
+    "Cabinet|+01.71|+02.02|-01.45": "cabinet_2",
+    "CounterTop|-00.02|+00.96|+00.51": "counter_top_1"
+  },
+  "rewritten_paragraphs": [
+    "butter_knife_1 is near both drawer_4 and drawer_3, while cup_1 is adjacent to pot_1 and also near knife_1. Additionally, plate_1 is located near cabinet_2, and pot_1 is near knife_1.",
+    "butter_knife_1 is in drawer_4 and above both drawer_1 and drawer_2, while cup_1 is in cabinet_2 which contains plate_1 and is to the left of drawer_4.",
+    "Butter_knife_1 is to the right of cup_1, which is to the left of drawer_2, and cup_1 is also to the left of drawer_1. To the right of cup_1, plate_1 is positioned, and below cabinet_2, pot_1 is situated.",
+    "The butter knife is to the right of the pot, which is also to the right of drawer four, with drawer three positioned to the right of the same pot. Additionally, drawer one is to the right of the pot, and the pot is to the left of drawer two, while it is also to the left of plate one.",
+    "knife_1 is to the left of drawer_4 and butter_knife_1 is to the right of knife_1, while knife_1 is also to the left of drawer_2 and drawer_3 is to the right of knife_1. Additionally, knife_1 is to the left of drawer_1 and cup_1, with knife_1 also positioned to the left of it.",
+    "Cabinet_1 is to the left of butter_knife_1 and also to the left of cup_1, while pot_1 is to the right of knife_1, which in turn is to the left of plate_1, with plate_1 positioned to the left of butter_knife_1. All these objects are situated within the space to the left of cabinet_1.",
+    "Cabinet_1 is to the left of knife_1, with plate_1 positioned to its right. Butter_knife_1 and cup_1 are to the left of counter_top_1, which is also to the left of knife_1. Pot_1 is situated to the right of counter_top_1.",
+    "counter_top_1 is to the left of plate_1."
+  ],
+  "rewritten_paragraph": "butter_knife_1 is near both drawer_4 and drawer_3, while cup_1 is adjacent to pot_1 and also near knife_1. Additionally, plate_1 is located near cabinet_2, and pot_1 is near knife_1.\n\nbutter_knife_1 is in drawer_4 and above both drawer_1 and drawer_2, while cup_1 is in cabinet_2 which contains plate_1 and is to the left of drawer_4.\n\nButter_knife_1 is to the right of cup_1, which is to the left of drawer_2, and cup_1 is also to the left of drawer_1. To the right of cup_1, plate_1 is positioned, and below cabinet_2, pot_1 is situated.\n\nThe butter knife is to the right of the pot, which is also to the right of drawer four, with drawer three positioned to the right of the same pot. Additionally, drawer one is to the right of the pot, and the pot is to the left of drawer two, while it is also to the left of plate one.\n\nknife_1 is to the left of drawer_4 and butter_knife_1 is to the right of knife_1, while knife_1 is also to the left of drawer_2 and drawer_3 is to the right of knife_1. Additionally, knife_1 is to the left of drawer_1 and cup_1, with knife_1 also positioned to the left of it.\n\nCabinet_1 is to the left of butter_knife_1 and also to the left of cup_1, while pot_1 is to the right of knife_1, which in turn is to the left of plate_1, with plate_1 positioned to the left of butter_knife_1. All these objects are situated within the space to the left of cabinet_1.\n\nCabinet_1 is to the left of knife_1, with plate_1 positioned to its right. Butter_knife_1 and cup_1 are to the left of counter_top_1, which is also to the left of knife_1. Pot_1 is situated to the right of counter_top_1.\n\ncounter_top_1 is to the left of plate_1.",
+  "metadata": {
+    "max_new_tokens": 320,
+    "max_words_per_paragraph": 220,
+    "max_sentences_per_batch": 6,
+    "do_sample": false,
+    "temperature": null,
+    "top_p": null,
+    "num_output_paragraphs": 8,
+    "raw_word_counts": [
+      28,
+      25,
+      37,
+      60,
+      51,
+      52,
+      38,
+      7
+    ],
+    "final_word_counts": [
+      28,
+      25,
+      37,
+      60,
+      51,
+      52,
+      38,
+      7
+    ],
+    "missing_aliases_per_batch": [
+      [],
+      [],
+      [
+        "drawer_3",
+        "butter_knife_1"
+      ],
+      [
+        "drawer_4",
+        "drawer_1",
+        "pot_1",
+        "drawer_3",
+        "butter_knife_1",
+        "drawer_2",
+        "plate_1"
+      ],
+      [],
+      [],
+      [
+        "pot_1",
+        "cabinet_1",
+        "butter_knife_1"
+      ],
+      []
+    ],
+    "leaked_raw_ids_per_batch": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "leaked_pipe_per_batch": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "alias_format_violations_per_batch": [
+      [],
+      [],
+      [
+        "butter_knife_1"
+      ],
+      [],
+      [],
+      [],
+      [
+        "pot_1",
+        "cabinet_1",
+        "butter_knife_1"
+      ],
+      []
+    ],
+    "timestamp": "2026-04-13 14:08:13"
+  },
+  "rewritten_paragraphs_raw": [
+    "butter_knife_1 is near both drawer_4 and drawer_3, while cup_1 is adjacent to pot_1 and also near knife_1. Additionally, plate_1 is located near cabinet_2, and pot_1 is near knife_1.",
+    "butter_knife_1 is in drawer_4 and above both drawer_1 and drawer_2, while cup_1 is in cabinet_2 which contains plate_1 and is to the left of drawer_4.",
+    "Butter_knife_1 is to the right of cup_1, which is to the left of drawer_2, and cup_1 is also to the left of drawer_1. To the right of cup_1, plate_1 is positioned, and below cabinet_2, pot_1 is situated.",
+    "The butter knife is to the right of the pot, which is also to the right of drawer four, with drawer three positioned to the right of the same pot. Additionally, drawer one is to the right of the pot, and the pot is to the left of drawer two, while it is also to the left of plate one.",
+    "knife_1 is to the left of drawer_4 and butter_knife_1 is to the right of knife_1, while knife_1 is also to the left of drawer_2 and drawer_3 is to the right of knife_1. Additionally, knife_1 is to the left of drawer_1 and cup_1, with knife_1 also positioned to the left of it.",
+    "Cabinet_1 is to the left of butter_knife_1 and also to the left of cup_1, while pot_1 is to the right of knife_1, which in turn is to the left of plate_1, with plate_1 positioned to the left of butter_knife_1. All these objects are situated within the space to the left of cabinet_1.",
+    "Cabinet_1 is to the left of knife_1, with plate_1 positioned to its right. Butter_knife_1 and cup_1 are to the left of counter_top_1, which is also to the left of knife_1. Pot_1 is situated to the right of counter_top_1.",
+    "counter_top_1 is to the left of plate_1."
+  ]
+}
