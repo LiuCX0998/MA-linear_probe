@@ -1,0 +1,2831 @@
+[
+  {
+    "sample_id": "step4T_fb5c4b6842362458f720",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_1_1_cluster_0_A_diverse_1|stool_1|bread_1|right_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_1_1_cluster_0_A_diverse_1",
+    "chunk_id": "FloorPlan6_chunk_1_1",
+    "cluster_id": "FloorPlan6_chunk_1_1_cluster_0",
+    "grid_i": 1,
+    "grid_j": 1,
+    "paragraph_index_within_cluster": 1,
+    "text": "In this part of the kitchen, On counter_top_1, there is cup_1. stool_1 is to the right of apple_1. bowl_1 is located close to spoon_1. pan_1 is resting on counter_top_1. apple_1 is resting on counter_top_1. spoon_1 is on counter_top_1. bowl_1 is on counter_top_1. To the left of pan_1, there is cup_1. To the right of cup_1, there is stool_1. stool_1 is to the right of pan_1. apple_1 is on the right side of bread_1. counter_top_1 has bread_1 on top of it. spoon_1 is nearby bowl_1. On top of counter_top_1, there is knife_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "apple_1",
+      "supporting_relations": [
+        {
+          "sentence": "stool_1 is to the right of apple_1.",
+          "template": "{subj} is to the right of {obj}.",
+          "template_index": 0,
+          "generation_mode": "diverse",
+          "subject_uid": "stool_1",
+          "subject_id": "Stool|+00.44|+00.01|+00.75",
+          "subject_type": "Stool",
+          "relation": "right_of",
+          "object_uid": "apple_1",
+          "object_id": "Apple|-00.48|+00.97|+00.41",
+          "object_type": "Apple",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Stool|+00.44|+00.01|+00.75",
+            "relation": "right_of",
+            "object_id": "Apple|-00.48|+00.97|+00.41",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "apple_1 is on the right side of bread_1.",
+          "template": "{subj} is on the right side of {obj}.",
+          "template_index": 1,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "right_of",
+          "object_uid": "bread_1",
+          "object_id": "Bread|-00.71|+00.98|+00.43",
+          "object_type": "Bread",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "right_of",
+            "object_id": "Bread|-00.71|+00.98|+00.43",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "apple_1",
+          "supporting_relations": [
+            {
+              "sentence": "stool_1 is to the right of apple_1.",
+              "template": "{subj} is to the right of {obj}.",
+              "template_index": 0,
+              "generation_mode": "diverse",
+              "subject_uid": "stool_1",
+              "subject_id": "Stool|+00.44|+00.01|+00.75",
+              "subject_type": "Stool",
+              "relation": "right_of",
+              "object_uid": "apple_1",
+              "object_id": "Apple|-00.48|+00.97|+00.41",
+              "object_type": "Apple",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Stool|+00.44|+00.01|+00.75",
+                "relation": "right_of",
+                "object_id": "Apple|-00.48|+00.97|+00.41",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "apple_1 is on the right side of bread_1.",
+              "template": "{subj} is on the right side of {obj}.",
+              "template_index": 1,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "right_of",
+              "object_uid": "bread_1",
+              "object_id": "Bread|-00.71|+00.98|+00.43",
+              "object_type": "Bread",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "right_of",
+                "object_id": "Bread|-00.71|+00.98|+00.43",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "stool_1",
+      "probe_subject_id": "Stool|+00.44|+00.01|+00.75",
+      "probe_subject_type": "Stool",
+      "probe_subject_mention_text": "stool_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 63,
+          "end": 70
+        },
+        {
+          "start": 334,
+          "end": 341
+        },
+        {
+          "start": 343,
+          "end": 350
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 63,
+        "end": 70
+      },
+      "probe_object_uid": "bread_1",
+      "probe_object_id": "Bread|-00.71|+00.98|+00.43",
+      "probe_object_type": "Bread",
+      "probe_object_mention_text": "bread_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 409,
+          "end": 416
+        },
+        {
+          "start": 436,
+          "end": 443
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 409,
+        "end": 416
+      },
+      "probe_relation_label": "right_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "direct",
+      "source_relation_summary": {
+        "subject_id": "Stool|+00.44|+00.01|+00.75",
+        "relation": "right_of",
+        "object_id": "Bread|-00.71|+00.98|+00.43",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "stool_1",
+        "subject_id": "Stool|+00.44|+00.01|+00.75",
+        "subject_type": "Stool",
+        "relation_label": "right_of",
+        "object_uid": "bread_1",
+        "object_id": "Bread|-00.71|+00.98|+00.43",
+        "object_type": "Bread",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "direct"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": 1.1519994139671326,
+          "dy": -0.9693143367767334,
+          "dz": 0.32188382744789124,
+          "horizontal_distance": 1.1961236759437215,
+          "euclidean_distance": 1.5395720612020858
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": 0.1434096097946167,
+          "subject_top_minus_object_bottom": 1.0617437958717346,
+          "x_overlap": -0.8962915539741516,
+          "y_overlap": -0.1434096097946167,
+          "z_overlap": -0.02128922939300537,
+          "has_x_overlap": false,
+          "has_y_overlap": false,
+          "has_z_overlap": false
+        },
+        "note": "bbox_geometry copied from forward relation; center_delta inverted."
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_5186004fb308830901ac",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_1_1_cluster_0_A_diverse_2|pan_1|bread_1|right_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_1_1_cluster_0_A_diverse_2",
+    "chunk_id": "FloorPlan6_chunk_1_1",
+    "cluster_id": "FloorPlan6_chunk_1_1_cluster_0",
+    "grid_i": 1,
+    "grid_j": 1,
+    "paragraph_index_within_cluster": 2,
+    "text": "Within this local scene, To the right of bowl_1, there is stool_1. knife_1 lies on counter_top_1. apple_1 is to the right of bread_1. spoon_1 can be seen to the left of stool_1. stool_1 is on the right side of bread_1. bowl_1 lies on counter_top_1. spoon_1 lies on counter_top_1. bowl_1 is positioned near knife_1. spoon_1 is located close to knife_1. counter_top_1 is on the left side of stool_1. counter_top_1 is holding up apple_1. apple_1 is positioned to the right of cup_1. pan_1 can be seen to the right of apple_1. spoon_1 is on the left side of pan_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "apple_1",
+      "supporting_relations": [
+        {
+          "sentence": "pan_1 can be seen to the right of apple_1.",
+          "template": "{subj} can be seen to the right of {obj}.",
+          "template_index": 4,
+          "generation_mode": "diverse",
+          "subject_uid": "pan_1",
+          "subject_id": "Pan|+00.00|+00.90|+00.95",
+          "subject_type": "Pan",
+          "relation": "right_of",
+          "object_uid": "apple_1",
+          "object_id": "Apple|-00.48|+00.97|+00.41",
+          "object_type": "Apple",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Pan|+00.00|+00.90|+00.95",
+            "relation": "right_of",
+            "object_id": "Apple|-00.48|+00.97|+00.41",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "apple_1 is to the right of bread_1.",
+          "template": "{subj} is to the right of {obj}.",
+          "template_index": 0,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "right_of",
+          "object_uid": "bread_1",
+          "object_id": "Bread|-00.71|+00.98|+00.43",
+          "object_type": "Bread",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "right_of",
+            "object_id": "Bread|-00.71|+00.98|+00.43",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "apple_1",
+          "supporting_relations": [
+            {
+              "sentence": "pan_1 can be seen to the right of apple_1.",
+              "template": "{subj} can be seen to the right of {obj}.",
+              "template_index": 4,
+              "generation_mode": "diverse",
+              "subject_uid": "pan_1",
+              "subject_id": "Pan|+00.00|+00.90|+00.95",
+              "subject_type": "Pan",
+              "relation": "right_of",
+              "object_uid": "apple_1",
+              "object_id": "Apple|-00.48|+00.97|+00.41",
+              "object_type": "Apple",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Pan|+00.00|+00.90|+00.95",
+                "relation": "right_of",
+                "object_id": "Apple|-00.48|+00.97|+00.41",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "apple_1 is to the right of bread_1.",
+              "template": "{subj} is to the right of {obj}.",
+              "template_index": 0,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "right_of",
+              "object_uid": "bread_1",
+              "object_id": "Bread|-00.71|+00.98|+00.43",
+              "object_type": "Bread",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "right_of",
+                "object_id": "Bread|-00.71|+00.98|+00.43",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "pan_1",
+      "probe_subject_id": "Pan|+00.00|+00.90|+00.95",
+      "probe_subject_type": "Pan",
+      "probe_subject_mention_text": "pan_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 480,
+          "end": 485
+        },
+        {
+          "start": 554,
+          "end": 559
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 480,
+        "end": 485
+      },
+      "probe_object_uid": "bread_1",
+      "probe_object_id": "Bread|-00.71|+00.98|+00.43",
+      "probe_object_type": "Bread",
+      "probe_object_mention_text": "bread_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 125,
+          "end": 132
+        },
+        {
+          "start": 210,
+          "end": 217
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 125,
+        "end": 132
+      },
+      "probe_relation_label": "right_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "direct",
+      "source_relation_summary": {
+        "subject_id": "Pan|+00.00|+00.90|+00.95",
+        "relation": "right_of",
+        "object_id": "Bread|-00.71|+00.98|+00.43",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "pan_1",
+        "subject_id": "Pan|+00.00|+00.90|+00.95",
+        "subject_type": "Pan",
+        "relation_label": "right_of",
+        "object_uid": "bread_1",
+        "object_id": "Bread|-00.71|+00.98|+00.43",
+        "object_type": "Bread",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "direct"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": 0.7120043435133994,
+          "dy": -0.08027875423431396,
+          "dz": 0.522001713514328,
+          "horizontal_distance": 0.8828567120964995,
+          "euclidean_distance": 0.886499098970357
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.05799382925033569,
+          "subject_top_minus_object_bottom": 0.16174644231796265,
+          "x_overlap": -0.4522005617618561,
+          "y_overlap": 0.05799055099487305,
+          "z_overlap": -0.11348927021026611,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": false
+        },
+        "note": "bbox_geometry copied from forward relation; center_delta inverted."
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_ae781283f74bc7873e25",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_1_1_cluster_0_A_diverse_2|pan_1|cup_1|right_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_1_1_cluster_0_A_diverse_2",
+    "chunk_id": "FloorPlan6_chunk_1_1",
+    "cluster_id": "FloorPlan6_chunk_1_1_cluster_0",
+    "grid_i": 1,
+    "grid_j": 1,
+    "paragraph_index_within_cluster": 2,
+    "text": "Within this local scene, To the right of bowl_1, there is stool_1. knife_1 lies on counter_top_1. apple_1 is to the right of bread_1. spoon_1 can be seen to the left of stool_1. stool_1 is on the right side of bread_1. bowl_1 lies on counter_top_1. spoon_1 lies on counter_top_1. bowl_1 is positioned near knife_1. spoon_1 is located close to knife_1. counter_top_1 is on the left side of stool_1. counter_top_1 is holding up apple_1. apple_1 is positioned to the right of cup_1. pan_1 can be seen to the right of apple_1. spoon_1 is on the left side of pan_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "apple_1",
+      "supporting_relations": [
+        {
+          "sentence": "pan_1 can be seen to the right of apple_1.",
+          "template": "{subj} can be seen to the right of {obj}.",
+          "template_index": 4,
+          "generation_mode": "diverse",
+          "subject_uid": "pan_1",
+          "subject_id": "Pan|+00.00|+00.90|+00.95",
+          "subject_type": "Pan",
+          "relation": "right_of",
+          "object_uid": "apple_1",
+          "object_id": "Apple|-00.48|+00.97|+00.41",
+          "object_type": "Apple",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Pan|+00.00|+00.90|+00.95",
+            "relation": "right_of",
+            "object_id": "Apple|-00.48|+00.97|+00.41",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "apple_1 is positioned to the right of cup_1.",
+          "template": "{subj} is positioned to the right of {obj}.",
+          "template_index": 3,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "right_of",
+          "object_uid": "cup_1",
+          "object_id": "Cup|-00.65|+00.90|+00.74",
+          "object_type": "Cup",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "right_of",
+            "object_id": "Cup|-00.65|+00.90|+00.74",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "apple_1",
+          "supporting_relations": [
+            {
+              "sentence": "pan_1 can be seen to the right of apple_1.",
+              "template": "{subj} can be seen to the right of {obj}.",
+              "template_index": 4,
+              "generation_mode": "diverse",
+              "subject_uid": "pan_1",
+              "subject_id": "Pan|+00.00|+00.90|+00.95",
+              "subject_type": "Pan",
+              "relation": "right_of",
+              "object_uid": "apple_1",
+              "object_id": "Apple|-00.48|+00.97|+00.41",
+              "object_type": "Apple",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Pan|+00.00|+00.90|+00.95",
+                "relation": "right_of",
+                "object_id": "Apple|-00.48|+00.97|+00.41",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "apple_1 is positioned to the right of cup_1.",
+              "template": "{subj} is positioned to the right of {obj}.",
+              "template_index": 3,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "right_of",
+              "object_uid": "cup_1",
+              "object_id": "Cup|-00.65|+00.90|+00.74",
+              "object_type": "Cup",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "right_of",
+                "object_id": "Cup|-00.65|+00.90|+00.74",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "pan_1",
+      "probe_subject_id": "Pan|+00.00|+00.90|+00.95",
+      "probe_subject_type": "Pan",
+      "probe_subject_mention_text": "pan_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 480,
+          "end": 485
+        },
+        {
+          "start": 554,
+          "end": 559
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 480,
+        "end": 485
+      },
+      "probe_object_uid": "cup_1",
+      "probe_object_id": "Cup|-00.65|+00.90|+00.74",
+      "probe_object_type": "Cup",
+      "probe_object_mention_text": "cup_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 473,
+          "end": 478
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 473,
+        "end": 478
+      },
+      "probe_relation_label": "right_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "Cup|-00.65|+00.90|+00.74",
+        "relation": "left_of",
+        "object_id": "Pan|+00.00|+00.90|+00.95",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "pan_1",
+        "subject_id": "Pan|+00.00|+00.90|+00.95",
+        "subject_type": "Pan",
+        "relation_label": "right_of",
+        "object_uid": "cup_1",
+        "object_id": "Cup|-00.65|+00.90|+00.74",
+        "object_type": "Cup",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": -0.6460054316557944,
+          "dy": 0.0025634765625,
+          "dz": -0.2100028395652771,
+          "horizontal_distance": 0.6792821286875349,
+          "euclidean_distance": 0.6792869656973812
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.05804866552352905,
+          "subject_top_minus_object_bottom": 0.095775306224823,
+          "x_overlap": -0.4350059926509857,
+          "y_overlap": 0.05799055099487305,
+          "z_overlap": 0.10415482521057129,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": true
+        }
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_c40ea7a980d996dd57c6",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_1_2_cluster_0_A_diverse_1|bread_1|pan_1|left_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_1_2_cluster_0_A_diverse_1",
+    "chunk_id": "FloorPlan6_chunk_1_2",
+    "cluster_id": "FloorPlan6_chunk_1_2_cluster_0",
+    "grid_i": 1,
+    "grid_j": 2,
+    "paragraph_index_within_cluster": 1,
+    "text": "In this local kitchen area, cup_1 lies on counter_top_1. bread_1 sits to the left of apple_1. spoon_1 sits to the left of pan_1. You can see apple_1 on counter_top_1. On top of counter_top_1, there is bowl_1. apple_1 sits to the right of cup_1. counter_top_1 is holding up spoon_1. bowl_1 is near spoon_1. On top of counter_top_1, there is knife_1. Near bowl_1, there is spoon_1. apple_1 is to the left of pan_1. pan_1 can be seen to the right of cup_1. pan_1 is resting on counter_top_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "apple_1",
+      "supporting_relations": [
+        {
+          "sentence": "bread_1 sits to the left of apple_1.",
+          "template": "{subj} sits to the left of {obj}.",
+          "template_index": 2,
+          "generation_mode": "diverse",
+          "subject_uid": "bread_1",
+          "subject_id": "Bread|-00.71|+00.98|+00.43",
+          "subject_type": "Bread",
+          "relation": "left_of",
+          "object_uid": "apple_1",
+          "object_id": "Apple|-00.48|+00.97|+00.41",
+          "object_type": "Apple",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Bread|-00.71|+00.98|+00.43",
+            "relation": "left_of",
+            "object_id": "Apple|-00.48|+00.97|+00.41",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "apple_1 is to the left of pan_1.",
+          "template": "{subj} is to the left of {obj}.",
+          "template_index": 0,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "left_of",
+          "object_uid": "pan_1",
+          "object_id": "Pan|+00.00|+00.90|+00.95",
+          "object_type": "Pan",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "left_of",
+            "object_id": "Pan|+00.00|+00.90|+00.95",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "apple_1",
+          "supporting_relations": [
+            {
+              "sentence": "bread_1 sits to the left of apple_1.",
+              "template": "{subj} sits to the left of {obj}.",
+              "template_index": 2,
+              "generation_mode": "diverse",
+              "subject_uid": "bread_1",
+              "subject_id": "Bread|-00.71|+00.98|+00.43",
+              "subject_type": "Bread",
+              "relation": "left_of",
+              "object_uid": "apple_1",
+              "object_id": "Apple|-00.48|+00.97|+00.41",
+              "object_type": "Apple",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Bread|-00.71|+00.98|+00.43",
+                "relation": "left_of",
+                "object_id": "Apple|-00.48|+00.97|+00.41",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "apple_1 is to the left of pan_1.",
+              "template": "{subj} is to the left of {obj}.",
+              "template_index": 0,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "left_of",
+              "object_uid": "pan_1",
+              "object_id": "Pan|+00.00|+00.90|+00.95",
+              "object_type": "Pan",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "left_of",
+                "object_id": "Pan|+00.00|+00.90|+00.95",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "bread_1",
+      "probe_subject_id": "Bread|-00.71|+00.98|+00.43",
+      "probe_subject_type": "Bread",
+      "probe_subject_mention_text": "bread_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 57,
+          "end": 64
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 57,
+        "end": 64
+      },
+      "probe_object_uid": "pan_1",
+      "probe_object_id": "Pan|+00.00|+00.90|+00.95",
+      "probe_object_type": "Pan",
+      "probe_object_mention_text": "pan_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 122,
+          "end": 127
+        },
+        {
+          "start": 406,
+          "end": 411
+        },
+        {
+          "start": 413,
+          "end": 418
+        },
+        {
+          "start": 454,
+          "end": 459
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 406,
+        "end": 411
+      },
+      "probe_relation_label": "left_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "Pan|+00.00|+00.90|+00.95",
+        "relation": "right_of",
+        "object_id": "Bread|-00.71|+00.98|+00.43",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "bread_1",
+        "subject_id": "Bread|-00.71|+00.98|+00.43",
+        "subject_type": "Bread",
+        "relation_label": "left_of",
+        "object_uid": "pan_1",
+        "object_id": "Pan|+00.00|+00.90|+00.95",
+        "object_type": "Pan",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": 0.7120043435133994,
+          "dy": -0.08027875423431396,
+          "dz": 0.522001713514328,
+          "horizontal_distance": 0.8828567120964995,
+          "euclidean_distance": 0.886499098970357
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.05799382925033569,
+          "subject_top_minus_object_bottom": 0.16174644231796265,
+          "x_overlap": -0.4522005617618561,
+          "y_overlap": 0.05799055099487305,
+          "z_overlap": -0.11348927021026611,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": false
+        },
+        "note": "bbox_geometry copied from forward relation; center_delta inverted."
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_7c9158abf4aaf92754a9",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_1_2_cluster_0_A_diverse_2|cup_1|pan_1|left_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_1_2_cluster_0_A_diverse_2",
+    "chunk_id": "FloorPlan6_chunk_1_2",
+    "cluster_id": "FloorPlan6_chunk_1_2_cluster_0",
+    "grid_i": 1,
+    "grid_j": 2,
+    "paragraph_index_within_cluster": 2,
+    "text": "In this local kitchen area, apple_1 sits on counter_top_1. Near bread_1, there is cup_1. spoon_1 is positioned to the left of pan_1. bread_1 is on the left side of apple_1. apple_1 sits to the left of pan_1. cup_1 is on top of counter_top_1. On counter_top_1, there is spoon_1. On top of counter_top_1, there is bowl_1. Near bowl_1, there is knife_1. knife_1 is on top of counter_top_1. pan_1 is on the right side of bread_1. apple_1 can be seen to the right of cup_1. pan_1 is to the right of knife_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "anchor_between_reversed_surface_form",
+      "anchor_uid": "apple_1",
+      "supporting_relations": [
+        {
+          "sentence": "apple_1 can be seen to the right of cup_1.",
+          "template": "{subj} can be seen to the right of {obj}.",
+          "template_index": 4,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "right_of",
+          "object_uid": "cup_1",
+          "object_id": "Cup|-00.65|+00.90|+00.74",
+          "object_type": "Cup",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "right_of",
+            "object_id": "Cup|-00.65|+00.90|+00.74",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "apple_1 sits to the left of pan_1.",
+          "template": "{subj} sits to the left of {obj}.",
+          "template_index": 2,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "left_of",
+          "object_uid": "pan_1",
+          "object_id": "Pan|+00.00|+00.90|+00.95",
+          "object_type": "Pan",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "left_of",
+            "object_id": "Pan|+00.00|+00.90|+00.95",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "anchor_between_reversed_surface_form",
+          "anchor_uid": "apple_1",
+          "supporting_relations": [
+            {
+              "sentence": "apple_1 can be seen to the right of cup_1.",
+              "template": "{subj} can be seen to the right of {obj}.",
+              "template_index": 4,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "right_of",
+              "object_uid": "cup_1",
+              "object_id": "Cup|-00.65|+00.90|+00.74",
+              "object_type": "Cup",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "right_of",
+                "object_id": "Cup|-00.65|+00.90|+00.74",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "apple_1 sits to the left of pan_1.",
+              "template": "{subj} sits to the left of {obj}.",
+              "template_index": 2,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "left_of",
+              "object_uid": "pan_1",
+              "object_id": "Pan|+00.00|+00.90|+00.95",
+              "object_type": "Pan",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "left_of",
+                "object_id": "Pan|+00.00|+00.90|+00.95",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "cup_1",
+      "probe_subject_id": "Cup|-00.65|+00.90|+00.74",
+      "probe_subject_type": "Cup",
+      "probe_subject_mention_text": "cup_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 82,
+          "end": 87
+        },
+        {
+          "start": 208,
+          "end": 213
+        },
+        {
+          "start": 462,
+          "end": 467
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 462,
+        "end": 467
+      },
+      "probe_object_uid": "pan_1",
+      "probe_object_id": "Pan|+00.00|+00.90|+00.95",
+      "probe_object_type": "Pan",
+      "probe_object_mention_text": "pan_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 126,
+          "end": 131
+        },
+        {
+          "start": 201,
+          "end": 206
+        },
+        {
+          "start": 387,
+          "end": 392
+        },
+        {
+          "start": 469,
+          "end": 474
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 201,
+        "end": 206
+      },
+      "probe_relation_label": "left_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "Pan|+00.00|+00.90|+00.95",
+        "relation": "right_of",
+        "object_id": "Cup|-00.65|+00.90|+00.74",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "cup_1",
+        "subject_id": "Cup|-00.65|+00.90|+00.74",
+        "subject_type": "Cup",
+        "relation_label": "left_of",
+        "object_uid": "pan_1",
+        "object_id": "Pan|+00.00|+00.90|+00.95",
+        "object_type": "Pan",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": 0.6460054316557944,
+          "dy": -0.0025634765625,
+          "dz": 0.2100028395652771,
+          "horizontal_distance": 0.6792821286875349,
+          "euclidean_distance": 0.6792869656973812
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.05804866552352905,
+          "subject_top_minus_object_bottom": 0.095775306224823,
+          "x_overlap": -0.4350059926509857,
+          "y_overlap": 0.05799055099487305,
+          "z_overlap": 0.10415482521057129,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": true
+        },
+        "note": "bbox_geometry copied from forward relation; center_delta inverted."
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_4c4a27c467cf880f8066",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_1_2_cluster_0_A_diverse_2|pan_1|cup_1|right_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_1_2_cluster_0_A_diverse_2",
+    "chunk_id": "FloorPlan6_chunk_1_2",
+    "cluster_id": "FloorPlan6_chunk_1_2_cluster_0",
+    "grid_i": 1,
+    "grid_j": 2,
+    "paragraph_index_within_cluster": 2,
+    "text": "In this local kitchen area, apple_1 sits on counter_top_1. Near bread_1, there is cup_1. spoon_1 is positioned to the left of pan_1. bread_1 is on the left side of apple_1. apple_1 sits to the left of pan_1. cup_1 is on top of counter_top_1. On counter_top_1, there is spoon_1. On top of counter_top_1, there is bowl_1. Near bowl_1, there is knife_1. knife_1 is on top of counter_top_1. pan_1 is on the right side of bread_1. apple_1 can be seen to the right of cup_1. pan_1 is to the right of knife_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "anchor_between_reversed_surface_form",
+      "anchor_uid": "apple_1",
+      "supporting_relations": [
+        {
+          "sentence": "apple_1 sits to the left of pan_1.",
+          "template": "{subj} sits to the left of {obj}.",
+          "template_index": 2,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "left_of",
+          "object_uid": "pan_1",
+          "object_id": "Pan|+00.00|+00.90|+00.95",
+          "object_type": "Pan",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "left_of",
+            "object_id": "Pan|+00.00|+00.90|+00.95",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "apple_1 can be seen to the right of cup_1.",
+          "template": "{subj} can be seen to the right of {obj}.",
+          "template_index": 4,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "right_of",
+          "object_uid": "cup_1",
+          "object_id": "Cup|-00.65|+00.90|+00.74",
+          "object_type": "Cup",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "right_of",
+            "object_id": "Cup|-00.65|+00.90|+00.74",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "anchor_between_reversed_surface_form",
+          "anchor_uid": "apple_1",
+          "supporting_relations": [
+            {
+              "sentence": "apple_1 sits to the left of pan_1.",
+              "template": "{subj} sits to the left of {obj}.",
+              "template_index": 2,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "left_of",
+              "object_uid": "pan_1",
+              "object_id": "Pan|+00.00|+00.90|+00.95",
+              "object_type": "Pan",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "left_of",
+                "object_id": "Pan|+00.00|+00.90|+00.95",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "apple_1 can be seen to the right of cup_1.",
+              "template": "{subj} can be seen to the right of {obj}.",
+              "template_index": 4,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "right_of",
+              "object_uid": "cup_1",
+              "object_id": "Cup|-00.65|+00.90|+00.74",
+              "object_type": "Cup",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "right_of",
+                "object_id": "Cup|-00.65|+00.90|+00.74",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "pan_1",
+      "probe_subject_id": "Pan|+00.00|+00.90|+00.95",
+      "probe_subject_type": "Pan",
+      "probe_subject_mention_text": "pan_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 126,
+          "end": 131
+        },
+        {
+          "start": 201,
+          "end": 206
+        },
+        {
+          "start": 387,
+          "end": 392
+        },
+        {
+          "start": 469,
+          "end": 474
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 201,
+        "end": 206
+      },
+      "probe_object_uid": "cup_1",
+      "probe_object_id": "Cup|-00.65|+00.90|+00.74",
+      "probe_object_type": "Cup",
+      "probe_object_mention_text": "cup_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 82,
+          "end": 87
+        },
+        {
+          "start": 208,
+          "end": 213
+        },
+        {
+          "start": 462,
+          "end": 467
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 462,
+        "end": 467
+      },
+      "probe_relation_label": "right_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "direct",
+      "source_relation_summary": {
+        "subject_id": "Pan|+00.00|+00.90|+00.95",
+        "relation": "right_of",
+        "object_id": "Cup|-00.65|+00.90|+00.74",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "pan_1",
+        "subject_id": "Pan|+00.00|+00.90|+00.95",
+        "subject_type": "Pan",
+        "relation_label": "right_of",
+        "object_uid": "cup_1",
+        "object_id": "Cup|-00.65|+00.90|+00.74",
+        "object_type": "Cup",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "direct"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": 0.6460054316557944,
+          "dy": -0.0025634765625,
+          "dz": 0.2100028395652771,
+          "horizontal_distance": 0.6792821286875349,
+          "euclidean_distance": 0.6792869656973812
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.05804866552352905,
+          "subject_top_minus_object_bottom": 0.095775306224823,
+          "x_overlap": -0.4350059926509857,
+          "y_overlap": 0.05799055099487305,
+          "z_overlap": 0.10415482521057129,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": true
+        },
+        "note": "bbox_geometry copied from forward relation; center_delta inverted."
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_89ed823cbceae0184aeb",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_1_2_cluster_0_A_diverse_3|bread_1|pan_1|left_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_1_2_cluster_0_A_diverse_3",
+    "chunk_id": "FloorPlan6_chunk_1_2",
+    "cluster_id": "FloorPlan6_chunk_1_2_cluster_0",
+    "grid_i": 1,
+    "grid_j": 2,
+    "paragraph_index_within_cluster": 3,
+    "text": "Within this local scene, You can see bowl_1 on counter_top_1. apple_1 is on counter_top_1. spoon_1 is nearby knife_1. bowl_1 can be seen to the left of pan_1. knife_1 lies on counter_top_1. On top of counter_top_1, there is cup_1. apple_1 is on the right side of cup_1. pan_1 is on the right side of cup_1. spoon_1 sits to the left of pan_1. apple_1 sits to the left of pan_1. pan_1 is on the right side of knife_1. counter_top_1 has pan_1 on top of it. Near spoon_1, there is knife_1. To the left of apple_1, there is bread_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "apple_1",
+      "supporting_relations": [
+        {
+          "sentence": "To the left of apple_1, there is bread_1.",
+          "template": "To the left of {obj}, there is {subj}.",
+          "template_index": 5,
+          "generation_mode": "diverse",
+          "subject_uid": "bread_1",
+          "subject_id": "Bread|-00.71|+00.98|+00.43",
+          "subject_type": "Bread",
+          "relation": "left_of",
+          "object_uid": "apple_1",
+          "object_id": "Apple|-00.48|+00.97|+00.41",
+          "object_type": "Apple",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Bread|-00.71|+00.98|+00.43",
+            "relation": "left_of",
+            "object_id": "Apple|-00.48|+00.97|+00.41",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "apple_1 sits to the left of pan_1.",
+          "template": "{subj} sits to the left of {obj}.",
+          "template_index": 2,
+          "generation_mode": "diverse",
+          "subject_uid": "apple_1",
+          "subject_id": "Apple|-00.48|+00.97|+00.41",
+          "subject_type": "Apple",
+          "relation": "left_of",
+          "object_uid": "pan_1",
+          "object_id": "Pan|+00.00|+00.90|+00.95",
+          "object_type": "Pan",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Apple|-00.48|+00.97|+00.41",
+            "relation": "left_of",
+            "object_id": "Pan|+00.00|+00.90|+00.95",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "apple_1",
+          "supporting_relations": [
+            {
+              "sentence": "To the left of apple_1, there is bread_1.",
+              "template": "To the left of {obj}, there is {subj}.",
+              "template_index": 5,
+              "generation_mode": "diverse",
+              "subject_uid": "bread_1",
+              "subject_id": "Bread|-00.71|+00.98|+00.43",
+              "subject_type": "Bread",
+              "relation": "left_of",
+              "object_uid": "apple_1",
+              "object_id": "Apple|-00.48|+00.97|+00.41",
+              "object_type": "Apple",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Bread|-00.71|+00.98|+00.43",
+                "relation": "left_of",
+                "object_id": "Apple|-00.48|+00.97|+00.41",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "apple_1 sits to the left of pan_1.",
+              "template": "{subj} sits to the left of {obj}.",
+              "template_index": 2,
+              "generation_mode": "diverse",
+              "subject_uid": "apple_1",
+              "subject_id": "Apple|-00.48|+00.97|+00.41",
+              "subject_type": "Apple",
+              "relation": "left_of",
+              "object_uid": "pan_1",
+              "object_id": "Pan|+00.00|+00.90|+00.95",
+              "object_type": "Pan",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Apple|-00.48|+00.97|+00.41",
+                "relation": "left_of",
+                "object_id": "Pan|+00.00|+00.90|+00.95",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "bread_1",
+      "probe_subject_id": "Bread|-00.71|+00.98|+00.43",
+      "probe_subject_type": "Bread",
+      "probe_subject_mention_text": "bread_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 519,
+          "end": 526
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 519,
+        "end": 526
+      },
+      "probe_object_uid": "pan_1",
+      "probe_object_id": "Pan|+00.00|+00.90|+00.95",
+      "probe_object_type": "Pan",
+      "probe_object_mention_text": "pan_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 152,
+          "end": 157
+        },
+        {
+          "start": 270,
+          "end": 275
+        },
+        {
+          "start": 335,
+          "end": 340
+        },
+        {
+          "start": 370,
+          "end": 375
+        },
+        {
+          "start": 377,
+          "end": 382
+        },
+        {
+          "start": 434,
+          "end": 439
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 370,
+        "end": 375
+      },
+      "probe_relation_label": "left_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "Pan|+00.00|+00.90|+00.95",
+        "relation": "right_of",
+        "object_id": "Bread|-00.71|+00.98|+00.43",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "bread_1",
+        "subject_id": "Bread|-00.71|+00.98|+00.43",
+        "subject_type": "Bread",
+        "relation_label": "left_of",
+        "object_uid": "pan_1",
+        "object_id": "Pan|+00.00|+00.90|+00.95",
+        "object_type": "Pan",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": 0.7120043435133994,
+          "dy": -0.08027875423431396,
+          "dz": 0.522001713514328,
+          "horizontal_distance": 0.8828567120964995,
+          "euclidean_distance": 0.886499098970357
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.05799382925033569,
+          "subject_top_minus_object_bottom": 0.16174644231796265,
+          "x_overlap": -0.4522005617618561,
+          "y_overlap": 0.05799055099487305,
+          "z_overlap": -0.11348927021026611,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": false
+        },
+        "note": "bbox_geometry copied from forward relation; center_delta inverted."
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_2450fcc24af77d4a58f1",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_2_0_cluster_0_A_diverse_0|sink_basin_1|dish_sponge_1|left_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_2_0_cluster_0_A_diverse_0",
+    "chunk_id": "FloorPlan6_chunk_2_0",
+    "cluster_id": "FloorPlan6_chunk_2_0_cluster_0",
+    "grid_i": 2,
+    "grid_j": 0,
+    "paragraph_index_within_cluster": 0,
+    "text": "In this part of the kitchen, lettuce_1 is kept in sink_basin_1. coffee_machine_1 lies on counter_top_1. On sink_1, there is mug_1. dish_sponge_1 lies on counter_top_1. You can see kettle_1 on counter_top_1. soap_bottle_1 lies on counter_top_1. tomato_1 lies on sink_1. coffee_machine_1 is to the left of faucet_1. coffee_machine_1 is on the left side of kettle_1. coffee_machine_1 is on the left side of lettuce_1. coffee_machine_1 can be seen to the left of mug_1. To the left of dish_sponge_1, there is faucet_1. kettle_1 can be seen to the left of faucet_1. mug_1 is to the left of dish_sponge_1. sink_basin_1 can be seen to the left of mug_1. tomato_1 is to the left of mug_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "mug_1",
+      "supporting_relations": [
+        {
+          "sentence": "sink_basin_1 can be seen to the left of mug_1.",
+          "template": "{subj} can be seen to the left of {obj}.",
+          "template_index": 4,
+          "generation_mode": "diverse",
+          "subject_uid": "sink_basin_1",
+          "subject_id": "Sink|+01.38|+00.81|-01.27|SinkBasin",
+          "subject_type": "SinkBasin",
+          "relation": "left_of",
+          "object_uid": "mug_1",
+          "object_id": "Mug|+01.45|+00.91|-01.23",
+          "object_type": "Mug",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Sink|+01.38|+00.81|-01.27|SinkBasin",
+            "relation": "left_of",
+            "object_id": "Mug|+01.45|+00.91|-01.23",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "mug_1 is to the left of dish_sponge_1.",
+          "template": "{subj} is to the left of {obj}.",
+          "template_index": 0,
+          "generation_mode": "diverse",
+          "subject_uid": "mug_1",
+          "subject_id": "Mug|+01.45|+00.91|-01.23",
+          "subject_type": "Mug",
+          "relation": "left_of",
+          "object_uid": "dish_sponge_1",
+          "object_id": "DishSponge|+01.74|+00.90|-00.86",
+          "object_type": "DishSponge",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Mug|+01.45|+00.91|-01.23",
+            "relation": "left_of",
+            "object_id": "DishSponge|+01.74|+00.90|-00.86",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "mug_1",
+          "supporting_relations": [
+            {
+              "sentence": "sink_basin_1 can be seen to the left of mug_1.",
+              "template": "{subj} can be seen to the left of {obj}.",
+              "template_index": 4,
+              "generation_mode": "diverse",
+              "subject_uid": "sink_basin_1",
+              "subject_id": "Sink|+01.38|+00.81|-01.27|SinkBasin",
+              "subject_type": "SinkBasin",
+              "relation": "left_of",
+              "object_uid": "mug_1",
+              "object_id": "Mug|+01.45|+00.91|-01.23",
+              "object_type": "Mug",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Sink|+01.38|+00.81|-01.27|SinkBasin",
+                "relation": "left_of",
+                "object_id": "Mug|+01.45|+00.91|-01.23",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "mug_1 is to the left of dish_sponge_1.",
+              "template": "{subj} is to the left of {obj}.",
+              "template_index": 0,
+              "generation_mode": "diverse",
+              "subject_uid": "mug_1",
+              "subject_id": "Mug|+01.45|+00.91|-01.23",
+              "subject_type": "Mug",
+              "relation": "left_of",
+              "object_uid": "dish_sponge_1",
+              "object_id": "DishSponge|+01.74|+00.90|-00.86",
+              "object_type": "DishSponge",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Mug|+01.45|+00.91|-01.23",
+                "relation": "left_of",
+                "object_id": "DishSponge|+01.74|+00.90|-00.86",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "sink_basin_1",
+      "probe_subject_id": "Sink|+01.38|+00.81|-01.27|SinkBasin",
+      "probe_subject_type": "SinkBasin",
+      "probe_subject_mention_text": "sink_basin_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 50,
+          "end": 62
+        },
+        {
+          "start": 600,
+          "end": 612
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 600,
+        "end": 612
+      },
+      "probe_object_uid": "dish_sponge_1",
+      "probe_object_id": "DishSponge|+01.74|+00.90|-00.86",
+      "probe_object_type": "DishSponge",
+      "probe_object_mention_text": "dish_sponge_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 131,
+          "end": 144
+        },
+        {
+          "start": 481,
+          "end": 494
+        },
+        {
+          "start": 585,
+          "end": 598
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 585,
+        "end": 598
+      },
+      "probe_relation_label": "left_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "DishSponge|+01.74|+00.90|-00.86",
+        "relation": "right_of",
+        "object_id": "Sink|+01.38|+00.81|-01.27|SinkBasin",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "sink_basin_1",
+        "subject_id": "Sink|+01.38|+00.81|-01.27|SinkBasin",
+        "subject_type": "SinkBasin",
+        "relation_label": "left_of",
+        "object_uid": "dish_sponge_1",
+        "object_id": "DishSponge|+01.74|+00.90|-00.86",
+        "object_type": "DishSponge",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": 0.5948903560638428,
+          "dy": 0.1487448811531067,
+          "dz": 0.5184141993522644,
+          "horizontal_distance": 0.7890803620847594,
+          "euclidean_distance": 0.8029774950128221
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.18244874477386475,
+          "subject_top_minus_object_bottom": -0.011685967445373535,
+          "x_overlap": -0.3772503137588501,
+          "y_overlap": -0.011685967445373535,
+          "z_overlap": -0.2612121105194092,
+          "has_x_overlap": false,
+          "has_y_overlap": false,
+          "has_z_overlap": false
+        },
+        "note": "bbox_geometry copied from forward relation; center_delta inverted."
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_93185337c7153815cace",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_2_0_cluster_0_A_diverse_0|tomato_1|dish_sponge_1|left_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_2_0_cluster_0_A_diverse_0",
+    "chunk_id": "FloorPlan6_chunk_2_0",
+    "cluster_id": "FloorPlan6_chunk_2_0_cluster_0",
+    "grid_i": 2,
+    "grid_j": 0,
+    "paragraph_index_within_cluster": 0,
+    "text": "In this part of the kitchen, lettuce_1 is kept in sink_basin_1. coffee_machine_1 lies on counter_top_1. On sink_1, there is mug_1. dish_sponge_1 lies on counter_top_1. You can see kettle_1 on counter_top_1. soap_bottle_1 lies on counter_top_1. tomato_1 lies on sink_1. coffee_machine_1 is to the left of faucet_1. coffee_machine_1 is on the left side of kettle_1. coffee_machine_1 is on the left side of lettuce_1. coffee_machine_1 can be seen to the left of mug_1. To the left of dish_sponge_1, there is faucet_1. kettle_1 can be seen to the left of faucet_1. mug_1 is to the left of dish_sponge_1. sink_basin_1 can be seen to the left of mug_1. tomato_1 is to the left of mug_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "mug_1",
+      "supporting_relations": [
+        {
+          "sentence": "tomato_1 is to the left of mug_1.",
+          "template": "{subj} is to the left of {obj}.",
+          "template_index": 0,
+          "generation_mode": "diverse",
+          "subject_uid": "tomato_1",
+          "subject_id": "Tomato|+01.30|+00.96|-01.08",
+          "subject_type": "Tomato",
+          "relation": "left_of",
+          "object_uid": "mug_1",
+          "object_id": "Mug|+01.45|+00.91|-01.23",
+          "object_type": "Mug",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Tomato|+01.30|+00.96|-01.08",
+            "relation": "left_of",
+            "object_id": "Mug|+01.45|+00.91|-01.23",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "mug_1 is to the left of dish_sponge_1.",
+          "template": "{subj} is to the left of {obj}.",
+          "template_index": 0,
+          "generation_mode": "diverse",
+          "subject_uid": "mug_1",
+          "subject_id": "Mug|+01.45|+00.91|-01.23",
+          "subject_type": "Mug",
+          "relation": "left_of",
+          "object_uid": "dish_sponge_1",
+          "object_id": "DishSponge|+01.74|+00.90|-00.86",
+          "object_type": "DishSponge",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Mug|+01.45|+00.91|-01.23",
+            "relation": "left_of",
+            "object_id": "DishSponge|+01.74|+00.90|-00.86",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "mug_1",
+          "supporting_relations": [
+            {
+              "sentence": "tomato_1 is to the left of mug_1.",
+              "template": "{subj} is to the left of {obj}.",
+              "template_index": 0,
+              "generation_mode": "diverse",
+              "subject_uid": "tomato_1",
+              "subject_id": "Tomato|+01.30|+00.96|-01.08",
+              "subject_type": "Tomato",
+              "relation": "left_of",
+              "object_uid": "mug_1",
+              "object_id": "Mug|+01.45|+00.91|-01.23",
+              "object_type": "Mug",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Tomato|+01.30|+00.96|-01.08",
+                "relation": "left_of",
+                "object_id": "Mug|+01.45|+00.91|-01.23",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "mug_1 is to the left of dish_sponge_1.",
+              "template": "{subj} is to the left of {obj}.",
+              "template_index": 0,
+              "generation_mode": "diverse",
+              "subject_uid": "mug_1",
+              "subject_id": "Mug|+01.45|+00.91|-01.23",
+              "subject_type": "Mug",
+              "relation": "left_of",
+              "object_uid": "dish_sponge_1",
+              "object_id": "DishSponge|+01.74|+00.90|-00.86",
+              "object_type": "DishSponge",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Mug|+01.45|+00.91|-01.23",
+                "relation": "left_of",
+                "object_id": "DishSponge|+01.74|+00.90|-00.86",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "tomato_1",
+      "probe_subject_id": "Tomato|+01.30|+00.96|-01.08",
+      "probe_subject_type": "Tomato",
+      "probe_subject_mention_text": "tomato_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 244,
+          "end": 252
+        },
+        {
+          "start": 647,
+          "end": 655
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 647,
+        "end": 655
+      },
+      "probe_object_uid": "dish_sponge_1",
+      "probe_object_id": "DishSponge|+01.74|+00.90|-00.86",
+      "probe_object_type": "DishSponge",
+      "probe_object_mention_text": "dish_sponge_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 131,
+          "end": 144
+        },
+        {
+          "start": 481,
+          "end": 494
+        },
+        {
+          "start": 585,
+          "end": 598
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 585,
+        "end": 598
+      },
+      "probe_relation_label": "left_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "DishSponge|+01.74|+00.90|-00.86",
+        "relation": "right_of",
+        "object_id": "Tomato|+01.30|+00.96|-01.08",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "tomato_1",
+        "subject_id": "Tomato|+01.30|+00.96|-01.08",
+        "subject_type": "Tomato",
+        "relation_label": "left_of",
+        "object_uid": "dish_sponge_1",
+        "object_id": "DishSponge|+01.74|+00.90|-00.86",
+        "object_type": "DishSponge",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": 0.4489274024963379,
+          "dy": -0.05744791030883789,
+          "dz": 0.22067397832870483,
+          "horizontal_distance": 0.5002327632447985,
+          "euclidean_distance": 0.50352068460231
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.014190435409545898,
+          "subject_top_minus_object_bottom": 0.10703444480895996,
+          "x_overlap": -0.35615408420562744,
+          "y_overlap": 0.014190435409545898,
+          "z_overlap": -0.0946815013885498,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": false
+        },
+        "note": "bbox_geometry copied from forward relation; center_delta inverted."
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_a7855ea7879fcb379175",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_2_0_cluster_0_A_diverse_1|faucet_1|paper_towel_roll_1|right_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_2_0_cluster_0_A_diverse_1",
+    "chunk_id": "FloorPlan6_chunk_2_0",
+    "cluster_id": "FloorPlan6_chunk_2_0_cluster_0",
+    "grid_i": 2,
+    "grid_j": 0,
+    "paragraph_index_within_cluster": 1,
+    "text": "In this part of the kitchen, soap_bottle_1 is on the right side of paper_towel_roll_1. tomato_1 is to the right of coffee_machine_1. dish_sponge_1 is on the right side of sink_1. mug_1 is positioned to the right of lettuce_1. window_1 is on the right side of kettle_1. To the right of paper_towel_roll_1, there is sink_basin_1. To the right of kettle_1, there is tomato_1. dish_sponge_1 can be seen to the right of lettuce_1. paper_towel_roll_1 is to the left of lettuce_1. mug_1 sits on sink_1. paper_towel_roll_1 can be seen to the left of mug_1. dish_sponge_1 sits to the right of tomato_1. sink_basin_1 sits to the right of coffee_machine_1. dish_sponge_1 is on the right side of soap_bottle_1. faucet_1 is positioned to the right of soap_bottle_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "soap_bottle_1",
+      "supporting_relations": [
+        {
+          "sentence": "faucet_1 is positioned to the right of soap_bottle_1.",
+          "template": "{subj} is positioned to the right of {obj}.",
+          "template_index": 3,
+          "generation_mode": "diverse",
+          "subject_uid": "faucet_1",
+          "subject_id": "Faucet|+01.31|+00.90|-01.54",
+          "subject_type": "Faucet",
+          "relation": "right_of",
+          "object_uid": "soap_bottle_1",
+          "object_id": "SoapBottle|+01.02|+00.90|-01.65",
+          "object_type": "SoapBottle",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Faucet|+01.31|+00.90|-01.54",
+            "relation": "right_of",
+            "object_id": "SoapBottle|+01.02|+00.90|-01.65",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "soap_bottle_1 is on the right side of paper_towel_roll_1.",
+          "template": "{subj} is on the right side of {obj}.",
+          "template_index": 1,
+          "generation_mode": "diverse",
+          "subject_uid": "soap_bottle_1",
+          "subject_id": "SoapBottle|+01.02|+00.90|-01.65",
+          "subject_type": "SoapBottle",
+          "relation": "right_of",
+          "object_uid": "paper_towel_roll_1",
+          "object_id": "PaperTowelRoll|+00.69|+01.01|-01.83",
+          "object_type": "PaperTowelRoll",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "SoapBottle|+01.02|+00.90|-01.65",
+            "relation": "right_of",
+            "object_id": "PaperTowelRoll|+00.69|+01.01|-01.83",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "soap_bottle_1",
+          "supporting_relations": [
+            {
+              "sentence": "faucet_1 is positioned to the right of soap_bottle_1.",
+              "template": "{subj} is positioned to the right of {obj}.",
+              "template_index": 3,
+              "generation_mode": "diverse",
+              "subject_uid": "faucet_1",
+              "subject_id": "Faucet|+01.31|+00.90|-01.54",
+              "subject_type": "Faucet",
+              "relation": "right_of",
+              "object_uid": "soap_bottle_1",
+              "object_id": "SoapBottle|+01.02|+00.90|-01.65",
+              "object_type": "SoapBottle",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Faucet|+01.31|+00.90|-01.54",
+                "relation": "right_of",
+                "object_id": "SoapBottle|+01.02|+00.90|-01.65",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "soap_bottle_1 is on the right side of paper_towel_roll_1.",
+              "template": "{subj} is on the right side of {obj}.",
+              "template_index": 1,
+              "generation_mode": "diverse",
+              "subject_uid": "soap_bottle_1",
+              "subject_id": "SoapBottle|+01.02|+00.90|-01.65",
+              "subject_type": "SoapBottle",
+              "relation": "right_of",
+              "object_uid": "paper_towel_roll_1",
+              "object_id": "PaperTowelRoll|+00.69|+01.01|-01.83",
+              "object_type": "PaperTowelRoll",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "SoapBottle|+01.02|+00.90|-01.65",
+                "relation": "right_of",
+                "object_id": "PaperTowelRoll|+00.69|+01.01|-01.83",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "faucet_1",
+      "probe_subject_id": "Faucet|+01.31|+00.90|-01.54",
+      "probe_subject_type": "Faucet",
+      "probe_subject_mention_text": "faucet_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 699,
+          "end": 707
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 699,
+        "end": 707
+      },
+      "probe_object_uid": "paper_towel_roll_1",
+      "probe_object_id": "PaperTowelRoll|+00.69|+01.01|-01.83",
+      "probe_object_type": "PaperTowelRoll",
+      "probe_object_mention_text": "paper_towel_roll_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 67,
+          "end": 85
+        },
+        {
+          "start": 285,
+          "end": 303
+        },
+        {
+          "start": 426,
+          "end": 444
+        },
+        {
+          "start": 496,
+          "end": 514
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 67,
+        "end": 85
+      },
+      "probe_relation_label": "right_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "PaperTowelRoll|+00.69|+01.01|-01.83",
+        "relation": "left_of",
+        "object_id": "Faucet|+01.31|+00.90|-01.54",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "faucet_1",
+        "subject_id": "Faucet|+01.31|+00.90|-01.54",
+        "subject_type": "Faucet",
+        "relation_label": "right_of",
+        "object_uid": "paper_towel_roll_1",
+        "object_id": "PaperTowelRoll|+00.69|+01.01|-01.83",
+        "object_type": "PaperTowelRoll",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": -0.612147331237793,
+          "dy": 0.10976701974868774,
+          "dz": -0.2933776378631592,
+          "horizontal_distance": 0.6788186750080755,
+          "euclidean_distance": 0.6876362353484784
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.3280937671661377,
+          "subject_top_minus_object_bottom": 0.2243809700012207,
+          "x_overlap": -0.44116222858428955,
+          "y_overlap": 0.2149045467376709,
+          "z_overlap": -0.21807050704956055,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": false
+        }
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_af8ecf6414b2b2900443",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_2_1_cluster_0_A_diverse_1|stove_burner_1|stove_knob_3|left_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_2_1_cluster_0_A_diverse_1",
+    "chunk_id": "FloorPlan6_chunk_2_1",
+    "cluster_id": "FloorPlan6_chunk_2_1_cluster_0",
+    "grid_i": 2,
+    "grid_j": 1,
+    "paragraph_index_within_cluster": 1,
+    "text": "Within this local scene, salt_shaker_1 is positioned to the left of window_1. butter_knife_1 lies on counter_top_1. pepper_shaker_1 is on the right side of fork_1. stove_burner_1 sits to the left of stove_knob_1. cabinet_1 appears above stove_knob_2. butter_knife_1 can be seen to the left of window_1. stove_knob_3 is to the right of salt_shaker_1. salt_shaker_1 is on the left side of stove_knob_1. stove_burner_1 sits to the left of salt_shaker_1. stove_burner_1 sits to the left of pepper_shaker_1. butter_knife_1 sits to the left of stove_knob_1. cabinet_1 is above butter_knife_1. pepper_shaker_1 is on the right side of butter_knife_1. window_1 sits to the right of pepper_shaker_1. Directly below counter_top_1, you can see garbage_can_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "shared_anchor_opposite_sides",
+      "anchor_uid": "salt_shaker_1",
+      "supporting_relations": [
+        {
+          "sentence": "stove_burner_1 sits to the left of salt_shaker_1.",
+          "template": "{subj} sits to the left of {obj}.",
+          "template_index": 2,
+          "generation_mode": "diverse",
+          "subject_uid": "stove_burner_1",
+          "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+          "subject_type": "StoveBurner",
+          "relation": "left_of",
+          "object_uid": "salt_shaker_1",
+          "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+          "object_type": "SaltShaker",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+            "relation": "left_of",
+            "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "stove_knob_3 is to the right of salt_shaker_1.",
+          "template": "{subj} is to the right of {obj}.",
+          "template_index": 0,
+          "generation_mode": "diverse",
+          "subject_uid": "stove_knob_3",
+          "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+          "subject_type": "StoveKnob",
+          "relation": "right_of",
+          "object_uid": "salt_shaker_1",
+          "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+          "object_type": "SaltShaker",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+            "relation": "right_of",
+            "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "shared_anchor_opposite_sides",
+          "anchor_uid": "salt_shaker_1",
+          "supporting_relations": [
+            {
+              "sentence": "stove_burner_1 sits to the left of salt_shaker_1.",
+              "template": "{subj} sits to the left of {obj}.",
+              "template_index": 2,
+              "generation_mode": "diverse",
+              "subject_uid": "stove_burner_1",
+              "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+              "subject_type": "StoveBurner",
+              "relation": "left_of",
+              "object_uid": "salt_shaker_1",
+              "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+              "object_type": "SaltShaker",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+                "relation": "left_of",
+                "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "stove_knob_3 is to the right of salt_shaker_1.",
+              "template": "{subj} is to the right of {obj}.",
+              "template_index": 0,
+              "generation_mode": "diverse",
+              "subject_uid": "stove_knob_3",
+              "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+              "subject_type": "StoveKnob",
+              "relation": "right_of",
+              "object_uid": "salt_shaker_1",
+              "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+              "object_type": "SaltShaker",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+                "relation": "right_of",
+                "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "stove_burner_1",
+      "probe_subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+      "probe_subject_type": "StoveBurner",
+      "probe_subject_mention_text": "stove_burner_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 164,
+          "end": 178
+        },
+        {
+          "start": 401,
+          "end": 415
+        },
+        {
+          "start": 451,
+          "end": 465
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 401,
+        "end": 415
+      },
+      "probe_object_uid": "stove_knob_3",
+      "probe_object_id": "StoveKnob|+01.88|+01.09|-00.31",
+      "probe_object_type": "StoveKnob",
+      "probe_object_mention_text": "stove_knob_3",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 303,
+          "end": 315
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 303,
+        "end": 315
+      },
+      "probe_relation_label": "left_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "direct",
+      "source_relation_summary": {
+        "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+        "relation": "left_of",
+        "object_id": "StoveKnob|+01.88|+01.09|-00.31",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "stove_burner_1",
+        "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+        "subject_type": "StoveBurner",
+        "relation_label": "left_of",
+        "object_uid": "stove_knob_3",
+        "object_id": "StoveKnob|+01.88|+01.09|-00.31",
+        "object_type": "StoveKnob",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "direct"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": -0.4675999879837036,
+          "dy": -0.16910004615783691,
+          "dz": 0.3708000034093857,
+          "horizontal_distance": 0.5967766678505119,
+          "euclidean_distance": 0.6202718894979384
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.21420741081237793,
+          "subject_top_minus_object_bottom": -0.13063526153564453,
+          "x_overlap": -0.3238179683685303,
+          "y_overlap": -0.13063526153564453,
+          "z_overlap": -0.22410336136817932,
+          "has_x_overlap": false,
+          "has_y_overlap": false,
+          "has_z_overlap": false
+        }
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_24d53b18bee4d2638516",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_2_1_cluster_0_A_diverse_1|stove_knob_3|stove_burner_1|right_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_2_1_cluster_0_A_diverse_1",
+    "chunk_id": "FloorPlan6_chunk_2_1",
+    "cluster_id": "FloorPlan6_chunk_2_1_cluster_0",
+    "grid_i": 2,
+    "grid_j": 1,
+    "paragraph_index_within_cluster": 1,
+    "text": "Within this local scene, salt_shaker_1 is positioned to the left of window_1. butter_knife_1 lies on counter_top_1. pepper_shaker_1 is on the right side of fork_1. stove_burner_1 sits to the left of stove_knob_1. cabinet_1 appears above stove_knob_2. butter_knife_1 can be seen to the left of window_1. stove_knob_3 is to the right of salt_shaker_1. salt_shaker_1 is on the left side of stove_knob_1. stove_burner_1 sits to the left of salt_shaker_1. stove_burner_1 sits to the left of pepper_shaker_1. butter_knife_1 sits to the left of stove_knob_1. cabinet_1 is above butter_knife_1. pepper_shaker_1 is on the right side of butter_knife_1. window_1 sits to the right of pepper_shaker_1. Directly below counter_top_1, you can see garbage_can_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "shared_anchor_opposite_sides",
+      "anchor_uid": "salt_shaker_1",
+      "supporting_relations": [
+        {
+          "sentence": "stove_knob_3 is to the right of salt_shaker_1.",
+          "template": "{subj} is to the right of {obj}.",
+          "template_index": 0,
+          "generation_mode": "diverse",
+          "subject_uid": "stove_knob_3",
+          "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+          "subject_type": "StoveKnob",
+          "relation": "right_of",
+          "object_uid": "salt_shaker_1",
+          "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+          "object_type": "SaltShaker",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+            "relation": "right_of",
+            "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "stove_burner_1 sits to the left of salt_shaker_1.",
+          "template": "{subj} sits to the left of {obj}.",
+          "template_index": 2,
+          "generation_mode": "diverse",
+          "subject_uid": "stove_burner_1",
+          "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+          "subject_type": "StoveBurner",
+          "relation": "left_of",
+          "object_uid": "salt_shaker_1",
+          "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+          "object_type": "SaltShaker",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+            "relation": "left_of",
+            "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "shared_anchor_opposite_sides",
+          "anchor_uid": "salt_shaker_1",
+          "supporting_relations": [
+            {
+              "sentence": "stove_knob_3 is to the right of salt_shaker_1.",
+              "template": "{subj} is to the right of {obj}.",
+              "template_index": 0,
+              "generation_mode": "diverse",
+              "subject_uid": "stove_knob_3",
+              "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+              "subject_type": "StoveKnob",
+              "relation": "right_of",
+              "object_uid": "salt_shaker_1",
+              "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+              "object_type": "SaltShaker",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+                "relation": "right_of",
+                "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "stove_burner_1 sits to the left of salt_shaker_1.",
+              "template": "{subj} sits to the left of {obj}.",
+              "template_index": 2,
+              "generation_mode": "diverse",
+              "subject_uid": "stove_burner_1",
+              "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+              "subject_type": "StoveBurner",
+              "relation": "left_of",
+              "object_uid": "salt_shaker_1",
+              "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+              "object_type": "SaltShaker",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+                "relation": "left_of",
+                "object_id": "SaltShaker|+01.67|+00.90|+00.46",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "stove_knob_3",
+      "probe_subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+      "probe_subject_type": "StoveKnob",
+      "probe_subject_mention_text": "stove_knob_3",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 303,
+          "end": 315
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 303,
+        "end": 315
+      },
+      "probe_object_uid": "stove_burner_1",
+      "probe_object_id": "StoveBurner|+01.41|+00.92|+00.06",
+      "probe_object_type": "StoveBurner",
+      "probe_object_mention_text": "stove_burner_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 164,
+          "end": 178
+        },
+        {
+          "start": 401,
+          "end": 415
+        },
+        {
+          "start": 451,
+          "end": 465
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 401,
+        "end": 415
+      },
+      "probe_relation_label": "right_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "StoveBurner|+01.41|+00.92|+00.06",
+        "relation": "left_of",
+        "object_id": "StoveKnob|+01.88|+01.09|-00.31",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "stove_knob_3",
+        "subject_id": "StoveKnob|+01.88|+01.09|-00.31",
+        "subject_type": "StoveKnob",
+        "relation_label": "right_of",
+        "object_uid": "stove_burner_1",
+        "object_id": "StoveBurner|+01.41|+00.92|+00.06",
+        "object_type": "StoveBurner",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": -0.4675999879837036,
+          "dy": -0.16910004615783691,
+          "dz": 0.3708000034093857,
+          "horizontal_distance": 0.5967766678505119,
+          "euclidean_distance": 0.6202718894979384
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -0.21420741081237793,
+          "subject_top_minus_object_bottom": -0.13063526153564453,
+          "x_overlap": -0.3238179683685303,
+          "y_overlap": -0.13063526153564453,
+          "z_overlap": -0.22410336136817932,
+          "has_x_overlap": false,
+          "has_y_overlap": false,
+          "has_z_overlap": false
+        }
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  },
+  {
+    "sample_id": "step4T_f3c0d1e8f384d9b7005e",
+    "pair_group_id": "FloorPlan6_FloorPlan6_chunk_2_1_cluster_0_A_diverse_1|window_1|fork_1|right_of|implicit_transitive",
+    "scene": "FloorPlan6",
+    "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+    "generation_mode": "diverse",
+    "paragraph_id": "FloorPlan6_FloorPlan6_chunk_2_1_cluster_0_A_diverse_1",
+    "chunk_id": "FloorPlan6_chunk_2_1",
+    "cluster_id": "FloorPlan6_chunk_2_1_cluster_0",
+    "grid_i": 2,
+    "grid_j": 1,
+    "paragraph_index_within_cluster": 1,
+    "text": "Within this local scene, salt_shaker_1 is positioned to the left of window_1. butter_knife_1 lies on counter_top_1. pepper_shaker_1 is on the right side of fork_1. stove_burner_1 sits to the left of stove_knob_1. cabinet_1 appears above stove_knob_2. butter_knife_1 can be seen to the left of window_1. stove_knob_3 is to the right of salt_shaker_1. salt_shaker_1 is on the left side of stove_knob_1. stove_burner_1 sits to the left of salt_shaker_1. stove_burner_1 sits to the left of pepper_shaker_1. butter_knife_1 sits to the left of stove_knob_1. cabinet_1 is above butter_knife_1. pepper_shaker_1 is on the right side of butter_knife_1. window_1 sits to the right of pepper_shaker_1. Directly below counter_top_1, you can see garbage_can_1.",
+    "evidence": {
+      "evidence_type": "implicit_transitive",
+      "probe_direction_relative_to_text": "implicit",
+      "has_explicit_evidence_sentence": false,
+      "evidence_sentence": null,
+      "sentence_index_in_paragraph": null,
+      "surface_order": null,
+      "supporting_relation_source": "paragraph_explicit_relations",
+      "implicit_rule": "chain_same_direction",
+      "anchor_uid": "pepper_shaker_1",
+      "supporting_relations": [
+        {
+          "sentence": "window_1 sits to the right of pepper_shaker_1.",
+          "template": "{subj} sits to the right of {obj}.",
+          "template_index": 2,
+          "generation_mode": "diverse",
+          "subject_uid": "window_1",
+          "subject_id": "Window|+01.97|+01.52|+01.12",
+          "subject_type": "Window",
+          "relation": "right_of",
+          "object_uid": "pepper_shaker_1",
+          "object_id": "PepperShaker|+01.76|+00.90|+00.37",
+          "object_type": "PepperShaker",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "Window|+01.97|+01.52|+01.12",
+            "relation": "right_of",
+            "object_id": "PepperShaker|+01.76|+00.90|+00.37",
+            "relation_family": "geometric"
+          }
+        },
+        {
+          "sentence": "pepper_shaker_1 is on the right side of fork_1.",
+          "template": "{subj} is on the right side of {obj}.",
+          "template_index": 1,
+          "generation_mode": "diverse",
+          "subject_uid": "pepper_shaker_1",
+          "subject_id": "PepperShaker|+01.76|+00.90|+00.37",
+          "subject_type": "PepperShaker",
+          "relation": "right_of",
+          "object_uid": "fork_1",
+          "object_id": "Fork|+01.44|+00.90|+00.38",
+          "object_type": "Fork",
+          "was_swapped_for_text": false,
+          "source_relation": {
+            "subject_id": "PepperShaker|+01.76|+00.90|+00.37",
+            "relation": "right_of",
+            "object_id": "Fork|+01.44|+00.90|+00.38",
+            "relation_family": "geometric"
+          }
+        }
+      ],
+      "num_supporting_paths": 1,
+      "original_pair_evidence_type": "implicit_labeled",
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "all_supporting_paths": [
+        {
+          "implicit_rule": "chain_same_direction",
+          "anchor_uid": "pepper_shaker_1",
+          "supporting_relations": [
+            {
+              "sentence": "window_1 sits to the right of pepper_shaker_1.",
+              "template": "{subj} sits to the right of {obj}.",
+              "template_index": 2,
+              "generation_mode": "diverse",
+              "subject_uid": "window_1",
+              "subject_id": "Window|+01.97|+01.52|+01.12",
+              "subject_type": "Window",
+              "relation": "right_of",
+              "object_uid": "pepper_shaker_1",
+              "object_id": "PepperShaker|+01.76|+00.90|+00.37",
+              "object_type": "PepperShaker",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "Window|+01.97|+01.52|+01.12",
+                "relation": "right_of",
+                "object_id": "PepperShaker|+01.76|+00.90|+00.37",
+                "relation_family": "geometric"
+              }
+            },
+            {
+              "sentence": "pepper_shaker_1 is on the right side of fork_1.",
+              "template": "{subj} is on the right side of {obj}.",
+              "template_index": 1,
+              "generation_mode": "diverse",
+              "subject_uid": "pepper_shaker_1",
+              "subject_id": "PepperShaker|+01.76|+00.90|+00.37",
+              "subject_type": "PepperShaker",
+              "relation": "right_of",
+              "object_uid": "fork_1",
+              "object_id": "Fork|+01.44|+00.90|+00.38",
+              "object_type": "Fork",
+              "was_swapped_for_text": false,
+              "source_relation": {
+                "subject_id": "PepperShaker|+01.76|+00.90|+00.37",
+                "relation": "right_of",
+                "object_id": "Fork|+01.44|+00.90|+00.38",
+                "relation_family": "geometric"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "probe_pair": {
+      "probe_subject_uid": "window_1",
+      "probe_subject_id": "Window|+01.97|+01.52|+01.12",
+      "probe_subject_type": "Window",
+      "probe_subject_mention_text": "window_1",
+      "probe_subject_all_char_spans_in_paragraph": [
+        {
+          "start": 68,
+          "end": 76
+        },
+        {
+          "start": 293,
+          "end": 301
+        },
+        {
+          "start": 643,
+          "end": 651
+        }
+      ],
+      "probe_subject_span_in_evidence_sentence": null,
+      "probe_subject_span_in_paragraph": {
+        "start": 643,
+        "end": 651
+      },
+      "probe_object_uid": "fork_1",
+      "probe_object_id": "Fork|+01.44|+00.90|+00.38",
+      "probe_object_type": "Fork",
+      "probe_object_mention_text": "fork_1",
+      "probe_object_all_char_spans_in_paragraph": [
+        {
+          "start": 156,
+          "end": 162
+        }
+      ],
+      "probe_object_span_in_evidence_sentence": null,
+      "probe_object_span_in_paragraph": {
+        "start": 156,
+        "end": 162
+      },
+      "probe_relation_label": "right_of",
+      "label_space": "directed_spatial_relation",
+      "has_relation_label": true,
+      "is_explicit_in_text": false,
+      "is_inverse_of_text_relation": false,
+      "is_symmetric_relation": false,
+      "is_directional_relation": true,
+      "is_implicit_transitive": true
+    },
+    "source_relation": {
+      "relation_source": "inferred_inverse",
+      "source_relation_summary": {
+        "subject_id": "Fork|+01.44|+00.90|+00.38",
+        "relation": "left_of",
+        "object_id": "Window|+01.97|+01.52|+01.12",
+        "relation_family": "geometric"
+      },
+      "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+      "sample_source": "step3_paragraph_pair_targets",
+      "text_source": "original_step3_paragraph_text",
+      "original_pair_target": {
+        "subject_uid": "window_1",
+        "subject_id": "Window|+01.97|+01.52|+01.12",
+        "subject_type": "Window",
+        "relation_label": "right_of",
+        "object_uid": "fork_1",
+        "object_id": "Fork|+01.44|+00.90|+00.38",
+        "object_type": "Fork",
+        "pair_evidence_type": "implicit_labeled",
+        "relation_source": "inferred_inverse"
+      }
+    },
+    "geometry": {
+      "has_geometry_label": true,
+      "geometry_label": {
+        "center_delta": {
+          "dx": -0.5330150127410889,
+          "dy": -0.6193317174911499,
+          "dz": -0.7373130619525909,
+          "horizontal_distance": 0.9097997335311152,
+          "euclidean_distance": 1.10059408113247
+        },
+        "bbox_geometry": {
+          "subject_bottom_minus_object_top": -1.2851235270500183,
+          "subject_top_minus_object_bottom": 0.9202268719673157,
+          "x_overlap": -0.36658263206481934,
+          "y_overlap": 0.02036142349243164,
+          "z_overlap": -0.22222602367401123,
+          "has_x_overlap": false,
+          "has_y_overlap": true,
+          "has_z_overlap": false
+        }
+      }
+    },
+    "source_step3_file": "FloorPlan6_experiment_A_text_diverse.json",
+    "source_step3_scene": "FloorPlan6"
+  }
+]

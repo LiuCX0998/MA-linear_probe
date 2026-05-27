@@ -1,0 +1,178 @@
+{
+  "experiment": "Step4_expB_settingA1_implicit_transitive_lr",
+  "definition": {
+    "name": "implicit_transitive",
+    "formal_definition": "implicit_transitive = implicit_labeled AND not explicit_direct_or_inverse AND explicit_relation_chain_supported",
+    "candidate_condition": "pair_target.pair_evidence_type == implicit_labeled",
+    "label_source": "step3_pair_targets_from_step2_geometry_or_topology",
+    "support_source": "paragraph_explicit_relations",
+    "text_intervention": "none; use original Step3 paragraph text",
+    "new_text_generated": false
+  },
+  "description": "Construct implicit_transitive probe samples from Step3 outputs. Candidates are Step3 implicit_labeled pair_targets. Kept samples must be supported by explicit relation chains inside the same paragraph.",
+  "input_dir": "/content/pilot_4/data/step3A_diverse_text_preserve_text_direction",
+  "input_pattern": "FloorPlan*_experiment_A_text_diverse.json",
+  "output_dir": "/content/pilot_4/data/p4_expB_settingA1_lr",
+  "combined_output_file": "p4_expB_settingA1_lr_output.json",
+  "valid_spans_output_file": "p4_expB_settingA1_implicit_transitive_lr_spans.json",
+  "allowed_labels": [
+    "left_of",
+    "right_of"
+  ],
+  "candidate_evidence_type": "implicit_labeled",
+  "new_evidence_type": "implicit_transitive",
+  "support_rules": [
+    "anchor_between_reversed_surface_form",
+    "chain_same_direction",
+    "shared_anchor_opposite_sides"
+  ],
+  "num_samples": 167,
+  "num_valid_span_samples": 167,
+  "label_counts": {
+    "left_of": 86,
+    "right_of": 81
+  },
+  "scene_counts": {
+    "FloorPlan1": 30,
+    "FloorPlan2": 23,
+    "FloorPlan3": 30,
+    "FloorPlan4": 40,
+    "FloorPlan5": 31,
+    "FloorPlan6": 13
+  },
+  "rule_counts": {
+    "chain_same_direction": 83,
+    "shared_anchor_opposite_sides": 37,
+    "anchor_between_reversed_surface_form": 47
+  },
+  "cluster_counts": {
+    "FloorPlan1_chunk_0_0_cluster_0": 3,
+    "FloorPlan1_chunk_1_0_cluster_0": 16,
+    "FloorPlan1_chunk_1_2_cluster_0": 4,
+    "FloorPlan1_chunk_2_0_cluster_0": 7,
+    "FloorPlan2_chunk_1_0_cluster_0": 21,
+    "FloorPlan2_chunk_2_0_cluster_0": 2,
+    "FloorPlan3_chunk_0_1_cluster_0": 3,
+    "FloorPlan3_chunk_1_0_cluster_0": 23,
+    "FloorPlan3_chunk_2_0_cluster_0": 4,
+    "FloorPlan4_chunk_0_0_cluster_0": 27,
+    "FloorPlan4_chunk_1_0_cluster_0": 4,
+    "FloorPlan4_chunk_2_0_cluster_0": 7,
+    "FloorPlan4_chunk_2_1_cluster_0": 2,
+    "FloorPlan5_chunk_0_0_cluster_0": 8,
+    "FloorPlan5_chunk_0_1_cluster_0": 15,
+    "FloorPlan5_chunk_0_2_cluster_0": 3,
+    "FloorPlan5_chunk_1_0_cluster_0": 1,
+    "FloorPlan5_chunk_2_0_cluster_0": 2,
+    "FloorPlan5_chunk_2_1_cluster_0": 2,
+    "FloorPlan6_chunk_1_1_cluster_0": 3,
+    "FloorPlan6_chunk_1_2_cluster_0": 4,
+    "FloorPlan6_chunk_2_0_cluster_0": 3,
+    "FloorPlan6_chunk_2_1_cluster_0": 3
+  },
+  "span_missing_counts": {},
+  "support_path_counts": {
+    "1": 154,
+    "2": 13
+  },
+  "global_construction_counts": {
+    "pair_targets_total": 13208,
+    "candidate_implicit_labeled": 4978,
+    "candidate_has_label": 4978,
+    "candidate_allowed_label": 2952,
+    "filtered_no_support_chain": 2785,
+    "filtered_label_not_allowed": 2026,
+    "kept_implicit_transitive": 167,
+    "kept_label::left_of": 86,
+    "kept_rule::chain_same_direction": 83,
+    "kept_rule::shared_anchor_opposite_sides": 37,
+    "kept_label::right_of": 81,
+    "kept_rule::anchor_between_reversed_surface_form": 47
+  },
+  "per_file_counts": {
+    "FloorPlan1_experiment_A_text_diverse.json": {
+      "pair_targets_total": 2666,
+      "candidate_implicit_labeled": 1018,
+      "candidate_has_label": 1018,
+      "candidate_allowed_label": 576,
+      "filtered_no_support_chain": 546,
+      "filtered_label_not_allowed": 442,
+      "kept_implicit_transitive": 30,
+      "kept_label::left_of": 17,
+      "kept_rule::chain_same_direction": 10,
+      "kept_rule::shared_anchor_opposite_sides": 10,
+      "kept_label::right_of": 13,
+      "kept_rule::anchor_between_reversed_surface_form": 10
+    },
+    "FloorPlan2_experiment_A_text_diverse.json": {
+      "pair_targets_total": 2074,
+      "candidate_implicit_labeled": 760,
+      "candidate_has_label": 760,
+      "candidate_allowed_label": 432,
+      "filtered_no_support_chain": 409,
+      "filtered_label_not_allowed": 328,
+      "kept_implicit_transitive": 23,
+      "kept_label::left_of": 11,
+      "kept_rule::chain_same_direction": 9,
+      "kept_label::right_of": 12,
+      "kept_rule::anchor_between_reversed_surface_form": 8,
+      "kept_rule::shared_anchor_opposite_sides": 6
+    },
+    "FloorPlan3_experiment_A_text_diverse.json": {
+      "pair_targets_total": 1410,
+      "candidate_implicit_labeled": 306,
+      "candidate_has_label": 306,
+      "candidate_allowed_label": 172,
+      "filtered_no_support_chain": 142,
+      "filtered_label_not_allowed": 134,
+      "kept_implicit_transitive": 30,
+      "kept_label::right_of": 10,
+      "kept_rule::chain_same_direction": 19,
+      "kept_label::left_of": 20,
+      "kept_rule::shared_anchor_opposite_sides": 2,
+      "kept_rule::anchor_between_reversed_surface_form": 9
+    },
+    "FloorPlan4_experiment_A_text_diverse.json": {
+      "pair_targets_total": 2282,
+      "candidate_implicit_labeled": 1244,
+      "candidate_has_label": 1244,
+      "filtered_label_not_allowed": 448,
+      "candidate_allowed_label": 796,
+      "filtered_no_support_chain": 756,
+      "kept_implicit_transitive": 40,
+      "kept_label::left_of": 20,
+      "kept_rule::chain_same_direction": 22,
+      "kept_label::right_of": 20,
+      "kept_rule::shared_anchor_opposite_sides": 10,
+      "kept_rule::anchor_between_reversed_surface_form": 8
+    },
+    "FloorPlan5_experiment_A_text_diverse.json": {
+      "pair_targets_total": 2500,
+      "candidate_implicit_labeled": 1064,
+      "candidate_has_label": 1064,
+      "candidate_allowed_label": 662,
+      "filtered_no_support_chain": 631,
+      "filtered_label_not_allowed": 402,
+      "kept_implicit_transitive": 31,
+      "kept_label::left_of": 12,
+      "kept_rule::anchor_between_reversed_surface_form": 10,
+      "kept_label::right_of": 19,
+      "kept_rule::chain_same_direction": 14,
+      "kept_rule::shared_anchor_opposite_sides": 7
+    },
+    "FloorPlan6_experiment_A_text_diverse.json": {
+      "pair_targets_total": 2276,
+      "candidate_implicit_labeled": 586,
+      "candidate_has_label": 586,
+      "filtered_label_not_allowed": 272,
+      "candidate_allowed_label": 314,
+      "filtered_no_support_chain": 301,
+      "kept_implicit_transitive": 13,
+      "kept_label::right_of": 7,
+      "kept_rule::chain_same_direction": 9,
+      "kept_label::left_of": 6,
+      "kept_rule::anchor_between_reversed_surface_form": 2,
+      "kept_rule::shared_anchor_opposite_sides": 2
+    }
+  }
+}
